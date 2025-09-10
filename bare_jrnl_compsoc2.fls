@@ -136,6 +136,10 @@ INPUT d:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT d:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
 INPUT d:/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
 INPUT d:/texlive/2024/texmf-dist/tex/latex/cleveref/cleveref.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx
 INPUT d:/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
 INPUT d:/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
 INPUT d:/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
@@ -514,10 +518,6 @@ INPUT ./figure/failure_protection.pdf
 INPUT d:/texlive/2024/texmf-dist/fonts/vf/public/txfonts/txbsssl.vf
 INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/rtxphvbo.tfm
 INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/rtxbsssl.tfm
-INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/txbsssc.tfm
-INPUT d:/texlive/2024/texmf-dist/fonts/vf/public/txfonts/txbsssc.vf
-INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/rtxphvb.tfm
-INPUT d:/texlive/2024/texmf-dist/fonts/tfm/public/txfonts/rtxbsssc.tfm
 INPUT bare_jrnl_compsoc2.aux
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxbsssc.pfb
 INPUT d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb

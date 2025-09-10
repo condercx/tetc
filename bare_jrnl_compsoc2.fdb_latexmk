@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1757504533.91875 "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" "bare_jrnl_compsoc2.pdf" "bare_jrnl_compsoc2" 1757504535.38692 0
+["pdflatex"] 1757513345.74047 "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" "bare_jrnl_compsoc2.pdf" "bare_jrnl_compsoc2" 1757513347.18128 0
   "IEEEtran.cls" 1757497629 282417 5b8c27844c9c11d4ad81e78fc081963e ""
-  "bare_jrnl_compsoc2.aux" 1757504535 17044 4794b43f3c3aae0e003341fc6b1da19c "pdflatex"
-  "bare_jrnl_compsoc2.tex" 1757504533 147942 76cba00dbc4926023a9cbda536876ac0 ""
+  "bare_jrnl_compsoc2.aux" 1757513347 17019 986a7180e2a3d5efabae14f0d88c9e82 "pdflatex"
+  "bare_jrnl_compsoc2.tex" 1757513345 146126 3c9bac7224d2d89b6311e5683c48a076 ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1728643890 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728643995 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1728644428 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -122,11 +122,12 @@
   "d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsya.fd" 1728644941 310 cee07e4964749ccbc77d84fc49726a79 ""
   "d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsyb.fd" 1728644941 310 8c5467c8932c259af51b0f116c9734bd ""
   "d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsyc.fd" 1728644941 310 4b5d6fe830337242ef847b3bff48ba21 ""
+  "d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty" 1728645039 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "d:/texlive/2024/texmf-dist/web2c/texmf.cnf" 1728643587 41649 5d6ae549fbbcb850a863f69aa41f3d10 ""
   "d:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728645117 5421091 287ecf793ecd0deda92deb72de2a5ec0 ""
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728645272 6862186 59fa009170c0854fa092c3bb64327ca1 ""
   "d:/texlive/2024/texmf.cnf" 1728645102 713 614551405fc44b98efbf516466e3c909 ""
-  "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" 1757504533 147942 76cba00dbc4926023a9cbda536876ac0 ""
+  "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" 1757513345 146126 3c9bac7224d2d89b6311e5683c48a076 ""
   "figure/85SL.pdf" 1757497630 20581 73c8caf5170e702667e4f9d8d1823a1c ""
   "figure/90SL.pdf" 1757497630 20605 a1e7909f9c82dde6aa602f6a80d039ff ""
   "figure/95SL.pdf" 1757497630 20491 f8bf7ba578d7b55f2950937ed9abde3c ""

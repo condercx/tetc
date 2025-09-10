@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.11)  10 SEP 2025 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.11)  10 SEP 2025 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -381,13 +381,30 @@ Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `algorithmicx' support loaded on input line 3120.
 Package cleveref Info: always capitalise cross-reference names on input line 7830.
 Package cleveref Info: always capitalise cross-reference names on input line 7852.
+) (d:/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
+ (d:/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
 \c@definition=\count296
 \c@lemma=\count297
 \c@property=\count298
 \c@proof=\count299
 \c@problem=\count300
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 403.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 402.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 ) (d:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -397,76 +414,76 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./bare_jrnl_compsoc2.aux)
 \openout1 = `bare_jrnl_compsoc2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 403.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 403.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 402.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 402.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 403.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 403.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 402.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 402.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 403.
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 403.
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 403.
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 403.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 403.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 402.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 402.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 402.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 402.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 402.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 403.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 403.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 403.
+LaTeX Font Info:    ... okay on input line 402.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 402.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 402.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    ... okay on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <5.01874> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <5.01874> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <7.02625> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <7.02625> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8.03> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8.03> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9.03374> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9.03374> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9.53561> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9.53561> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <11.04124> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <11.04124> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12.045> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12.045> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.06374> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.06374> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20.075> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20.075> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.09> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 402.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24.09> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 402.
 
 -- Lines per column: 61 (exact).
 (d:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -483,82 +500,82 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24.09> not available
 \makeMPintoPDFobject=\count307
 \everyMPtoPDFconversion=\toks30
 )
-LaTeX Font Info:    Trying to load font information for OT1+txss on input line 520.
+LaTeX Font Info:    Trying to load font information for OT1+txss on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txss.fd
 File: ot1txss.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 22.88542pt on input line 520.
+(Font)              scaled to size 22.88542pt on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 9.05879pt on input line 520.
+(Font)              scaled to size 9.05879pt on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 10.48914pt on input line 520.
+(Font)              scaled to size 10.48914pt on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <11.04124> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 520.
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 10.48914pt on input line 520.
+(Font)              scaled to size 10.48914pt on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 7.62846pt on input line 520.
+(Font)              scaled to size 7.62846pt on input line 519.
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 7.62846pt on input line 520.
-LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 520.
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 520.
+(Font)              scaled to size 7.62846pt on input line 519.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 519.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 520.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 520.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 520.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+pzd on input line 520.
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 519.
  (d:/texlive/2024/texmf-dist/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 10.48914pt on input line 548.
+(Font)              scaled to size 10.48914pt on input line 547.
 LaTeX Font Info:    Font shape `OT1/txss/b/sc' will be
-(Font)              scaled to size 10.48914pt on input line 548.
+(Font)              scaled to size 10.48914pt on input line 547.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 6.6749pt on input line 570.
-LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 570.
+(Font)              scaled to size 6.6749pt on input line 569.
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 569.
 LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 4.6724pt on input line 570.
+(Font)              scaled to size 4.6724pt on input line 569.
  [1{d:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
 ]
 LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
-(Font)              scaled to size 9.05879pt on input line 674.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 712.
+(Font)              scaled to size 9.05879pt on input line 673.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 711.
 
 Underfull \vbox (badness 1019) has occurred while \output is active []
 
  [2]
-Underfull \hbox (badness 3291) in paragraph at lines 736--737
+Underfull \hbox (badness 3291) in paragraph at lines 735--736
 \OT1/txr/m/n/9.53561 val-i-da-tion us-ing un-trusted 3PIPs. Two types of se-cu-rity
  []
 
 LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <9.53561> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 738.
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 737.
 LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 9.05879pt on input line 738.
+(Font)              scaled to size 9.05879pt on input line 737.
 <figure/sample_code_analysis.pdf, id=18, 344.38663pt x 281.16444pt>
 File: figure/sample_code_analysis.pdf Graphic file (type pdf)
 <use figure/sample_code_analysis.pdf>
-Package pdftex.def Info: figure/sample_code_analysis.pdf  used on input line 748.
+Package pdftex.def Info: figure/sample_code_analysis.pdf  used on input line 747.
 (pdftex.def)             Requested size: 210.55022pt x 171.90045pt.
 <figure/tg.png, id=19, 979.66pt x 798.985pt>
 File: figure/tg.png Graphic file (type png)
 <use figure/tg.png>
-Package pdftex.def Info: figure/tg.png  used on input line 759.
+Package pdftex.def Info: figure/tg.png  used on input line 758.
 (pdftex.def)             Requested size: 153.6447pt x 125.30437pt.
 
 
@@ -566,35 +583,35 @@ pdfTeX warning: pdflatex.exe (file ./figure/constraint_example1_1.pdf): PDF incl
 <figure/constraint_example1_1.pdf, id=21, 336.25626pt x 296.10625pt>
 File: figure/constraint_example1_1.pdf Graphic file (type pdf)
 <use figure/constraint_example1_1.pdf>
-Package pdftex.def Info: figure/constraint_example1_1.pdf  used on input line 763.
+Package pdftex.def Info: figure/constraint_example1_1.pdf  used on input line 762.
 (pdftex.def)             Requested size: 142.26378pt x 125.27644pt.
 <figure/performance-motivation1.pdf, id=22, 398.4466pt x 342.25266pt>
 File: figure/performance-motivation1.pdf Graphic file (type pdf)
 <use figure/performance-motivation1.pdf>
-Package pdftex.def Info: figure/performance-motivation1.pdf  used on input line 767.
+Package pdftex.def Info: figure/performance-motivation1.pdf  used on input line 766.
 (pdftex.def)             Requested size: 150.79968pt x 129.52989pt.
 
-Underfull \hbox (badness 1418) in paragraph at lines 776--777
+Underfull \hbox (badness 1418) in paragraph at lines 775--776
 \OT1/txr/m/n/9.53561 ar-chi-tec-ture [14], dual/triple mod-u-lar re-dun-dancy [35], and
  []
 
 [3 <./figure/sample_code_analysis.pdf>]
-Underfull \hbox (badness 1466) in paragraph at lines 814--815
+Underfull \hbox (badness 1466) in paragraph at lines 812--813
 \OT1/txr/m/n/9.53561 of per-for-mance and area, and Fig. 2[] shows an ex-am-ple,
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 824--825
+Underfull \hbox (badness 5711) in paragraph at lines 822--823
 \OT1/txr/m/n/9.53561 are inter-core com-mu-ni-ca-tions. How-ever, many security-
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 824--825
+Underfull \hbox (badness 1859) in paragraph at lines 822--823
 \OT1/txr/m/n/9.53561 such as au-tonomous ve-hi-cles. To re-duce the per-for-mance
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 824--825
+Underfull \hbox (badness 1852) in paragraph at lines 822--823
 \OT1/txr/m/n/9.53561 un-pro-tected com-mu-ni-ca-tions can be as-signed as intra-core
  []
 
@@ -604,7 +621,7 @@ pdfTeX warning: pdflatex.exe (file ./figure/security1_1.pdf): PDF inclusion: fou
 <figure/security1_1.pdf, id=38, 484.81125pt x 310.15875pt>
 File: figure/security1_1.pdf Graphic file (type pdf)
 <use figure/security1_1.pdf>
-Package pdftex.def Info: figure/security1_1.pdf  used on input line 840.
+Package pdftex.def Info: figure/security1_1.pdf  used on input line 838.
 (pdftex.def)             Requested size: 210.55022pt x 134.70026pt.
 
 
@@ -612,15 +629,15 @@ pdfTeX warning: pdflatex.exe (file ./figure/security2_1.pdf): PDF inclusion: fou
 <figure/security2_1.pdf, id=39, 484.81125pt x 310.15875pt>
 File: figure/security2_1.pdf Graphic file (type pdf)
 <use figure/security2_1.pdf>
-Package pdftex.def Info: figure/security2_1.pdf  used on input line 845.
+Package pdftex.def Info: figure/security2_1.pdf  used on input line 843.
 (pdftex.def)             Requested size: 210.55022pt x 134.70026pt.
 [4 <./figure/tg.png> <./figure/constraint_example1_1.pdf> <./figure/performance-motivation1.pdf>]
-Underfull \hbox (badness 1515) in paragraph at lines 866--867
+Underfull \hbox (badness 1515) in paragraph at lines 864--865
 \OT1/txr/m/n/9.53561 can-not guar-an-tee full pro-tec-tion from all HT at-tacks, the
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 869--870
+Underfull \hbox (badness 1412) in paragraph at lines 867--868
 \OML/txmi/m/it/9.53561 pc$\OT1/txr/m/n/9.53561 , core speeds of ven-dors, and vul-ner-a-bil-ity of each
  []
 
@@ -631,55 +648,55 @@ pdfTeX warning: pdflatex.exe (file ./figure/security2_1.pdf): PDF inclusion: mul
 <figure/TG1.pdf, id=131, 182.03508pt x 426.52951pt>
 File: figure/TG1.pdf Graphic file (type pdf)
 <use figure/TG1.pdf>
-Package pdftex.def Info: figure/TG1.pdf  used on input line 977.
+Package pdftex.def Info: figure/TG1.pdf  used on input line 981.
 (pdftex.def)             Requested size: 65.44142pt x 153.33572pt.
 <figure/tvg.pdf, id=132, 207.9268pt x 372.7315pt>
 File: figure/tvg.pdf Graphic file (type pdf)
 <use figure/tvg.pdf>
-Package pdftex.def Info: figure/tvg.pdf  used on input line 980.
+Package pdftex.def Info: figure/tvg.pdf  used on input line 984.
 (pdftex.def)             Requested size: 86.2118pt x 154.54419pt.
 <figure/tvg1.pdf, id=133, 191.96518pt x 373.2374pt>
 File: figure/tvg1.pdf Graphic file (type pdf)
 <use figure/tvg1.pdf>
-Package pdftex.def Info: figure/tvg1.pdf  used on input line 983.
+Package pdftex.def Info: figure/tvg1.pdf  used on input line 987.
 (pdftex.def)             Requested size: 78.81425pt x 153.23903pt.
 
-Overfull \hbox (5.13109pt too wide) in paragraph at lines 973--985
+Overfull \hbox (5.13109pt too wide) in paragraph at lines 977--989
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 985.
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 989.
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1001.
+(amsmath)                trying to recover with `aligned' on input line 1007.
 
 
-Overfull \hbox (9.0648pt too wide) in alignment at lines 993--1003
+Overfull \hbox (9.0648pt too wide) in alignment at lines 999--1009
  [][][] []
  []
 
 <figure/EVG1.pdf, id=134, 215.89359pt x 556.47296pt>
 File: figure/EVG1.pdf Graphic file (type pdf)
 <use figure/EVG1.pdf>
-Package pdftex.def Info: figure/EVG1.pdf  used on input line 1037.
+Package pdftex.def Info: figure/EVG1.pdf  used on input line 1046.
 (pdftex.def)             Requested size: 79.6678pt x 205.34834pt.
 <figure/EVG2.pdf, id=135, 218.56857pt x 556.47296pt>
 File: figure/EVG2.pdf Graphic file (type pdf)
 <use figure/EVG2.pdf>
-Package pdftex.def Info: figure/EVG2.pdf  used on input line 1040.
+Package pdftex.def Info: figure/EVG2.pdf  used on input line 1049.
 (pdftex.def)             Requested size: 80.52135pt x 205.0087pt.
 <figure/EVG3.pdf, id=136, 215.89359pt x 555.59167pt>
 File: figure/EVG3.pdf Graphic file (type pdf)
 <use figure/EVG3.pdf>
-Package pdftex.def Info: figure/EVG3.pdf  used on input line 1043.
+Package pdftex.def Info: figure/EVG3.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 79.6678pt x 205.02313pt.
 
-Overfull \hbox (6.89189pt too wide) in paragraph at lines 1033--1045
+Overfull \hbox (6.89189pt too wide) in paragraph at lines 1042--1054
  [][] 
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 1054--1054
+Underfull \hbox (badness 1783) in paragraph at lines 1063--1063
 []\OT1/txr/bx/n/9.53561 Algorithm 1 \OT1/txr/m/n/9.53561 Task clus-ter-ing with per-for-mance con-straint,
  []
 
@@ -687,22 +704,22 @@ Underfull \hbox (badness 1783) in paragraph at lines 1054--1054
 <figure/vcg_c_1.pdf, id=207, 512.7697pt x 298.75415pt>
 File: figure/vcg_c_1.pdf Graphic file (type pdf)
 <use figure/vcg_c_1.pdf>
-Package pdftex.def Info: figure/vcg_c_1.pdf  used on input line 1096.
+Package pdftex.def Info: figure/vcg_c_1.pdf  used on input line 1105.
 (pdftex.def)             Requested size: 213.39009pt x 122.34412pt.
 <figure/vcg_c_2.pdf, id=208, 557.98158pt x 357.30388pt>
 File: figure/vcg_c_2.pdf Graphic file (type pdf)
 <use figure/vcg_c_2.pdf>
-Package pdftex.def Info: figure/vcg_c_2.pdf  used on input line 1099.
+Package pdftex.def Info: figure/vcg_c_2.pdf  used on input line 1108.
 (pdftex.def)             Requested size: 227.62451pt x 128.03502pt.
 <figure/vcg_c_3.pdf, id=209, 512.7697pt x 298.75415pt>
 File: figure/vcg_c_3.pdf Graphic file (type pdf)
 <use figure/vcg_c_3.pdf>
-Package pdftex.def Info: figure/vcg_c_3.pdf  used on input line 1103.
+Package pdftex.def Info: figure/vcg_c_3.pdf  used on input line 1112.
 (pdftex.def)             Requested size: 221.92633pt x 122.34412pt.
 <figure/vcg_result.pdf, id=210, 525.17506pt x 332.52129pt>
 File: figure/vcg_result.pdf Graphic file (type pdf)
 <use figure/vcg_result.pdf>
-Package pdftex.def Info: figure/vcg_result.pdf  used on input line 1106.
+Package pdftex.def Info: figure/vcg_result.pdf  used on input line 1115.
 (pdftex.def)             Requested size: 221.9263pt x 128.03883pt.
 
 
@@ -712,96 +729,101 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 6559) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1209--1210
+Underfull \hbox (badness 1490) in paragraph at lines 1218--1219
 []\OT1/txr/m/n/9.53561 Algorithm 2[] de-scribes the pro-posed ven-dor as-sign-ment
  []
 
 [8 <./figure/vcg_c_1.pdf> <./figure/vcg_c_2.pdf> <./figure/vcg_c_3.pdf> <./figure/vcg_result.pdf>]
-Underfull \hbox (badness 3375) in paragraph at lines 1315--1316
+Underfull \hbox (badness 3375) in paragraph at lines 1324--1325
 []\OT1/txr/m/n/9.53561 In each it-er-a-tion of the performance-constrained task
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 1317--1318
+Underfull \hbox (badness 2828) in paragraph at lines 1326--1327
 []\OT1/txr/m/n/9.53561 In the ven-dor as-sign-ment and task schedul-ing stage,
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 1336--1337
+Underfull \hbox (badness 1466) in paragraph at lines 1345--1346
 \OT1/txr/m/n/9.53561 All the ex-per-i-ments were im-ple-mented in C on a Linux
  []
 
 [9]
 LaTeX Font Info:    Font shape `OT1/txss/b/it' in size <9.53561> not available
-(Font)              Font shape `OT1/txss/b/sl' tried instead on input line 1418.
+(Font)              Font shape `OT1/txss/b/sl' tried instead on input line 1427.
 LaTeX Font Info:    Font shape `OT1/txss/b/sl' will be
-(Font)              scaled to size 9.05879pt on input line 1418.
+(Font)              scaled to size 9.05879pt on input line 1427.
 <figure/95SL.pdf, id=389, 1087.47221pt x 480.10933pt>
 File: figure/95SL.pdf Graphic file (type pdf)
 <use figure/95SL.pdf>
-Package pdftex.def Info: figure/95SL.pdf  used on input line 1428.
+Package pdftex.def Info: figure/95SL.pdf  used on input line 1437.
 (pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
 <figure/90SL.pdf, id=390, 1087.47221pt x 480.10933pt>
 File: figure/90SL.pdf Graphic file (type pdf)
 <use figure/90SL.pdf>
-Package pdftex.def Info: figure/90SL.pdf  used on input line 1431.
+Package pdftex.def Info: figure/90SL.pdf  used on input line 1440.
 (pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
 <figure/85SL.pdf, id=391, 1102.52846pt x 480.10933pt>
 File: figure/85SL.pdf Graphic file (type pdf)
 <use figure/85SL.pdf>
-Package pdftex.def Info: figure/85SL.pdf  used on input line 1434.
+Package pdftex.def Info: figure/85SL.pdf  used on input line 1443.
 (pdftex.def)             Requested size: 239.00298pt x 104.07129pt.
 <figure/failure_protection.pdf, id=392, 1052.43996pt x 513.49805pt>
 File: figure/failure_protection.pdf Graphic file (type pdf)
 <use figure/failure_protection.pdf>
-Package pdftex.def Info: figure/failure_protection.pdf  used on input line 1445.
+Package pdftex.def Info: figure/failure_protection.pdf  used on input line 1454.
 (pdftex.def)             Requested size: 250.38434pt x 122.16077pt.
  [10] [11 <./figure/95SL.pdf> <./figure/90SL.pdf> <./figure/85SL.pdf> <./figure/failure_protection.pdf>]
-Underfull \hbox (badness 2359) in paragraph at lines 1583--1584
+Underfull \hbox (badness 2359) in paragraph at lines 1592--1593
 []\OT1/txr/m/n/8.03 A. Malekpour, R. Ragel, A. Ign-ja-tovic, and S. Parameswaran,
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 1694--1695
+Underfull \hbox (badness 2635) in paragraph at lines 1703--1704
 \OT1/txr/m/n/8.03 MP-SoCs from un-trust-wor-thy 3PIPs through security-driven task
  []
 
 
-Underfull \hbox (badness 1990) in paragraph at lines 1731--1732
+Underfull \hbox (badness 1990) in paragraph at lines 1740--1741
 \OT1/txr/m/n/8.03 Tro-jan at-tacks us-ing hard-ware iso-la-tion,'' \OT1/txr/m/it/8.03 IEEE Trans-ac-tions on
  []
 
 [12]
-Underfull \hbox (badness 5050) in paragraph at lines 1876--1880
+Underfull \hbox (badness 5050) in paragraph at lines 1885--1889
 []\OT1/txss/b/n/8.03 Songping Liu \OT1/txss/m/n/8.03 re-ceived the B.E. de-gree in
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 1876--1880
+Underfull \hbox (badness 3375) in paragraph at lines 1885--1889
 \OT1/txss/m/n/8.03 China. His cur-rent re-search in-ter-ests in-clude
  []
 
 
-Underfull \hbox (badness 6708) in paragraph at lines 1893--1895
+Underfull \hbox (badness 6708) in paragraph at lines 1902--1904
 \OT1/txss/m/n/8.03 She is cur-rently a pro-fes-sor of elec-tron-ics
  []
 
 [13]
-LaTeX Font Info:    Font shape `OT1/txss/b/sc' will be
-(Font)              scaled to size 13.34981pt on input line 1899.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1903--1905
+Underfull \hbox (badness 10000) in paragraph at lines 1914--1916
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1922--1924
+Underfull \hbox (badness 10000) in paragraph at lines 1927--1929
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1946
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2014--2016
 []
  []
 
 [14
-
-] [15
 
 ] (./bare_jrnl_compsoc2.aux)
  ***********
@@ -810,18 +832,18 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8198 strings out of 476023
- 142704 string characters out of 5791733
- 1982190 words of memory out of 5000000
- 30148 multiletter control sequences out of 15000+600000
- 674755 words of font info for 291 fonts, out of 8000000 for 9000
+ 8641 strings out of 476023
+ 148893 string characters out of 5791733
+ 1983190 words of memory out of 5000000
+ 30585 multiletter control sequences out of 15000+600000
+ 672614 words of font info for 288 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
  57i,18n,65p,1496b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxbsssc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc2.pdf (15 pages, 901018 bytes).
+Output written on bare_jrnl_compsoc2.pdf (14 pages, 899611 bytes).
 PDF statistics:
- 652 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
+ 649 PDF objects out of 1000 (max. 8388607)
+ 261 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

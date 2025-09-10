@@ -73,12 +73,11 @@
 \usepackage{cite}
 \usepackage{makecell}
 \usepackage[capitalize]{cleveref}
-
 %\usepackage[numbers,sort&compress]{natbib}
 % If IEEEtran.cls has not been installed into the LaTeX system files,
 % manually specify the path to it like:
 % \documentclass[10pt,journal,compsoc]{../sty/IEEEtran}
-
+\usepackage{xcolor}
 
 \newtheorem{definition}{\textbf{Definition}}
 \newtheorem{lemma}{\textbf{Lemma}}
@@ -783,8 +782,6 @@ To mute undesired and potentially malicious communication paths and at the same 
 
 
 
-
-
 \subsection{Vulnerability Analysis}
 
 
@@ -801,6 +798,7 @@ The \textit{statement analysis} first measures the statement execution condition
 The \textit{observability analysis} evaluates the \textit{observability} of signals through the circuit's primary output, and it is computed by summing the statement weights of the signal that influences the target signal. The observability from signal $sig$ to its target signal $sig_t$ is denoted as $T_O(sig, sig_t)$, and the method of evaluating $T_O(sig, sig_t)$ is demonstrated via an example of calculating $T_O(X, Z)$. The $X$ and $Z$ signals both appear in lines 8 and 10, meaning that $T_O(X, Z)=0.1875 + 0.3125 = 0.5$, where 0.1875 and 0.3125 are the statement weights of $X$ in lines 8 and 10, respectively.
 
 The \textit{detectability analysis} defines the detectability of a signal based on its statement weight and observability. The detectability of signal $sig$ in line $l$ is defined as $T_D(sig,l) = T_W(sig,l) \times T_O(sig,sig_t)$, and an example of computing $T_D(X,8)$ is given as follows. With $T_W(X,8)=0.1875$ and $T_O(X,Z)=0.5$, the detectability is calculated as $T_D(X,8) = 0.1875 \times 0.5 = 0.09375$. Similarly, the detectability of $X$ in line 10 is $T_D(X,10) = 0.3125 \times 0.5 = 0.15625$. A lower $T_D$ indicates a higher vulnerability to Trojan insertion, and the signal $X$ at line 8 has a higher vulnerability to Trojan attacks in this example. Therefore, the vulnerability of a signal (also referred to as \textit{communication})  between tasks is set as $1/T_D$ in this study.
+
 
 
 \subsection{Motivations}
@@ -877,6 +875,10 @@ vul_s=\sum \limits_{e\in E_c}vul(e)
 
 \noindent where $E_c$ is the set of all unprotected communications, and $vul(e)$ is the vulnerability of $e$. The following performance constraints must also be satisfied.
 
+
+
+
+
 (1) For any task, its finish time must not be earlier than its start time plus the execution time, which is:
 \begin{equation}
 	FT_i \geq ST_i + exec(v_i), ~~~\forall v_i \in V
@@ -893,6 +895,8 @@ FT_i \leq pc,~~~ \forall v_i \in V
 	ST_j \geq FT_i + dly(e_{ij}), ~~~\forall e_{ij} \in E
 \end{equation}
 where $dly(e_{ij})$ is the communication delay of $e_{ij}$.
+
+
 
 %\begin{table}[!h]
 %\renewcommand{\arraystretch}{1.06}
@@ -990,6 +994,8 @@ The \textbf{timing violated graph} ($TVG=(V_T, E_T)$) is then constructed by all
 
 Edge contraction is then performed to optimize the schedule length, but some data-dependent tasks have to be executed by different types of IP cores, making the corresponding edge unable to be contracted. For the edge $e_{ij}$ that can be contracted, $dly_{inter}(e_{ij})$ and $dly_{intra}(e_{ij})$ are its inter-core communication delay and intra-core communication delay, respectively. After contracting $e_{ij}$, the reduced communication delay of $e_{ij}$ is $dly_{rd}(e_{ij})$, which equals $dly_{inter}(e_{ij})-dly_{intra}(e_{ij})$, and the lengths of all paths that pass through $e_{ij}$ are also reduced by $dly_{rd}(e_{ij})$. Let the sum of the reduced schedule lengths of all paths (from $s$ to $t$) in $TVG$ be $w_{dly}(e_{ij})$, and it is calculated as follows:
 
+
+
 \begin{eqnarray*}
 %	\centering
 	\begin{split}
@@ -1003,6 +1009,9 @@ Edge contraction is then performed to optimize the schedule length, but some dat
 \end{eqnarray*}
 
 \noindent where $path_{tvg}(e_{ij})$ is the number of paths in $TVG$ that pass through $e_{ij}$. If task $v_i$ and $v_j$ are of the same type, the weight of $e_{ij}$ is $path_{tvg}(e_{ij})*dly_{rd}(e_{ij})$; otherwise, $w_{dly}(e_{ij})$ is set to -1, meaning that such edge will not be selected for edge contraction.
+
+
+
 
 Fig. \ref{subfig:tvg1-2} illustrates the $w_{dly}(e_{ij})$ and $vul(e_{ij})$ of all edges in $TVG$, which are indicated next to the edges, and all tasks are assumed to be the same type. The target in the schedule length optimization stage is to contract the edges with larger schedule length reduction $w_{dly}(e_{ij})$ and smaller vulnerability increment $vul(e_{ij})$. Therefore, the total weight that evaluates an edge $e_{ij}$ contraction, denoted as $w(e_{ij})$, can be calculated as follows:
 \begin{equation}
@@ -1125,7 +1134,7 @@ The \textbf{vendor conflict graph} of type $t$ ($VCFG^t=(V^t_c, E^t_{cf})$) is c
 For different types of tasks, their corresponding vendor assignments are performed independently, and we assume that all tasks are with the same type in the following discussion for simplicity. The examples of vendor conflict graph and vendor compatible graph, denoted as $VCFG$ and $VCPG$, are presented in Fig. \ref{subfig:vcg_c_1}, and they are constructed from the performance-constrained clustering results shown in Fig. \ref{subfig:EVG3}. Because the edges in $VCPG$ are too many to demonstrate, we use dashed lines to represent the remaining edges that are connected to this cluster.
 
 
-%Then, a probability-based method is used to analyze the number of cores required. The accumulated probability of task concurrency is calculated, and it is denoted as \textit{distribution graph} (DG). We assume that the probabilities of a task on all its possible scheduling results are the same \cite{article:PP}, and the probability that $v_i$ is executed in time $t_j$ is denoted as $prob(v_i,t_j)$. The summation of the probabilities of all tasks in a cluster $c$ for the time period $t_j$ is denoted as $DG(c, t_j)$ and calculated as follows:
+
 The main challenge in optimizing the number of cores in the vendor assignment stage is that the vendors of tasks have not yet been determined, and therefore, the accurate number of cores from each vendor can hardly be evaluated. Inspired by the probabilistic approach in \cite{article:PP}, we also assume that the probabilities of a task on all its possible scheduling results are the same, and employ a probability-based method to analyze the number of cores required. Let $prob(v_i,T_j)$ be the probability that $v_i$ is executed in time $T_j$, and the accumulated probability of task concurrency is calculated and denoted as the \textit{distribution graph} (DG). The summation of the probabilities of all tasks in a cluster $c$ for the time period $T_j$ is denoted as $DG(c, T_j)$ and calculated as follows:
 \begin{equation}
 DG(c, T_j) = \sum \limits_{v_i\in c} prob(v_i, T_j)
@@ -1896,63 +1905,48 @@ received the B.S. and Ph.D. degrees in electronics and communication engineering
 
 \clearpage
 
-\section*{{\Large Authors' Response}}
-We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper.
+
+
+\section*{Authors' Response}
+$~~~~$We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper. The comments provided have contributed substantially to the improvement of our manuscript. In what follows, we present the detailed explanations of how the manuscript has been revised to respond to the comments of the associate editor and the reviewers. In the previous pages, the sentences colored blue, red, and cyan are the modified parts.
 
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
-
-\vspace*{2em}
-
-
-\section*{{\Large Reviewer 1}}
+\section*{Reviewer 1}
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 1}
-The authors address the reviewer's comments from the previous round. The authors may consider adding a table summarizing all mathematical symbols to improve the readability of the paper.
+The authors may consider adding a table summarizing all mathematical symbols to improve the readability of the paper.
 
 \subsection*{Responses}
 
-Thank you very much for your feedbacks and for your positive evaluations of our manuscript.
-
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
+\vspace{10em}
 
 
-
-
-\vspace*{3em}
-
-
-
-\section*{{\Large Reviewer 2}}
+\section*{Reviewer 2}
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 1}
-The authors did a good job of implementing the suggestions of the reviewers. My only comment is that I would clearly state that this work extends some previous work from the same authors. This was already done in the Motivation section, but in third-person. I would clearly state this before the contribution in the Introduction, so that it is apparent the work extends a conference one, which is my understanding.
+My only comment is that I would clearly state that this work extends some previous work from the same authors. This was already done in the Motivation section, but in third-person. I would clearly state this before the contribution in the Introduction, so that it is apparent the work extends a conference one, which is my understanding.
 
 \subsection*{Responses}
 
-Thanks very much for your valuable suggestions. Compared to our prior work, this work has made two major improvements, which are listed as follows.
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
-
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
+\vspace{10em}
 
-
-
-
-\vspace*{3em}
-
-
-\section*{{\Large Reviewer 3}}
+\section*{Reviewer 3}
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -1961,7 +1955,7 @@ One issue in the previous round of review is the difficulty in keeping in mind a
 
 \subsection*{Responses}
 
-In this revised manuscript, the vulnerability analysis method adopted from the work presented \cite{conference:HS} is also explained in detail. We hope that the explanations of vulnerability analysis help readers get better understandings of the vulnerabilities against HT attacks. These explanations are presented in Section 3.3 "Vulnerability Analysis", in the lower right of page 3 and upper left of page 4, highlighted in red. The details of vulnerability analysis method is also given as follows.
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -1970,50 +1964,57 @@ In literature review, the authors may need to include a discussion and analysis 
 
 \subsection*{Responses}
 
-Thanks for your comments. The necessity of minimizing the number of cores has been added in Section 1 "Introduction", which is also presented as follows.
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
+
 
 \subsection*{Comment 3}
-Referring to Eq. (3), does the performance constraint in this work literally represent the
-deadline for task finish time? If so, why not directly using deadline constraints?
+Referring to Eq. (3), does the performance constraint in this work literally represent the deadline for task finish time? If so, why not directly using deadline constraints?
 
 \subsection*{Responses}
 
-\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
+
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
+
+
 
 \subsection*{Comment 4}
-The term "core minimization" is to some extent awkward. Apparently, it means to achieve the lowest number of required cores. It is more appropriate to use "core usage minimization".
+The term ``core minimization'' is to some extent awkward. Apparently, it means to achieve the lowest number of required cores. It is more appropriate to use ``core usage minimization''. 
 
 \subsection*{Responses}
 
-\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
+\textcolor{red}{adf}
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
+
 
 \subsection*{Comment 5}
-This paper heavily relies on pseudocodes to explain the key steps of the methodology, The
-authors can include flowcharts to help clarify the algorithmic flow.
+This paper heavily relies on pseudocodes to explain the key steps of the methodology, The authors can include flowcharts to help clarify the algorithmic flow.
 
 \subsection*{Responses}
 
-\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
+
+
 
 \subsection*{Comment 6}
-The authors claim a low complexity of $O(m^2)$, in which m is the number of nodes. How comes
-that the scheduling approach takes exceptionally long execution times (regarding the CPU
-runtime statistics in Table 2)?
+The authors claim a low complexity of $O(m^2)$, in which m is the number of nodes. How comes that the scheduling approach takes exceptionally long execution times (regarding the CPU runtime statistics in Table 2)?
 
 \subsection*{Responses}
 
-\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
+
+
+
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
+\noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
+% that's all folks
 \end{document}
 
 
