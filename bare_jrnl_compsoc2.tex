@@ -1897,7 +1897,7 @@ received the B.S. and Ph.D. degrees in electronics and communication engineering
 \clearpage
 
 \section*{{\Large Authors' Response}}
-We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper. The comments provided have contributed substantially to the improvement of our manuscript. In what follows, we present the detailed explanations of how the manuscript has been revised to respond to the comments of the associate editor and the reviewers. In the previous pages, the sentences colored blue, red, magenta and cyan are the modified parts.
+We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper.
 
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -1912,49 +1912,11 @@ We greatly appreciate the Editor's and the reviewers' insightful and scrupulous 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 1}
-* The paper clearly states the objectives in the introduction.\\
-* SoA is exhaustive.\\
-* Evaluation tackles different angles in a complete manner.
+The authors address the reviewer's comments from the previous round. The authors may consider adding a table summarizing all mathematical symbols to improve the readability of the paper.
 
 \subsection*{Responses}
 
 Thank you very much for your feedbacks and for your positive evaluations of our manuscript.
-
-\noindent\rule[0.25\baselineskip]{252pt}{1pt}
-
-
-\subsection*{Comment 2}
-* Sometimes I had a hard time keeping in mind all the acronyms.
-
-\subsection*{Responses}
-Thanks for your comments. In the previous manuscript, a number of acronyms were used, which made you feel hard to keep in mind all the acronyms. In this revised manuscript, we have removed some of the acronyms that are seldomly used or inappropriately used. Examples of removed acronyms are given as follows.
-
-\vspace{0.5em}
-1) COTS, which stands for commercial-off-the-shelf, is removed in Section 1 ``Introduction".
-
-\vspace{0.5em}
-2) All the acronyms related to vulnerability analysis are removed. In the previous manuscript, a number of assumptions and acronyms were used to calculate the vulnerabilities of communications. In this revised manuscript, the vulnerability analysis method (presented in Section 3.3 in the lower right of page 3) is adopted from the work presented in \cite{conference:HS}, and this method evaluates the vulnerabilities of communications throughout the paper. Therefore, all the assumptions and acronyms that are related to vulnerability analysis are removed in this revised manuscript.
-
-
-\noindent\rule[0.25\baselineskip]{252pt}{1pt}
-
-
-\subsection*{Comment 3}
-* Spurious bold in page 9 line 47.
-
-\subsection*{Responses}
-As you suggested, the spurious bold in page 9 line 47 is removed in the revised manuscript.
-
-\vspace{0.5em}
-\noindent---Before modification:
-
-\textbf{Our} proposed method was then compared with four other methods to demonstrate its effectiveness.
-
-\vspace{0.5em}
-\noindent---After modification:
-
-Our proposed method was then compared with four other methods to demonstrate its effectiveness. (This modification is given in the mid right of page 9, highlighted in red)
-
 
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -1973,59 +1935,11 @@ Our proposed method was then compared with four other methods to demonstrate its
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 1}
-The work has some similarity and overlap with the authors' prior work (ref. [22], [23]). But the authors simply mentioned prior work ··ignore the communication paths..." A better justification with proper comparison and novelty over prior work is needed.
+The authors did a good job of implementing the suggestions of the reviewers. My only comment is that I would clearly state that this work extends some previous work from the same authors. This was already done in the Motivation section, but in third-person. I would clearly state this before the contribution in the Introduction, so that it is apparent the work extends a conference one, which is my understanding.
 
 \subsection*{Responses}
 
 Thanks very much for your valuable suggestions. Compared to our prior work, this work has made two major improvements, which are listed as follows.
-\begin{enumerate}
-    \item In our prior work, all the communications and tasks are assumed to be equally vulnerable to the hardware Trojan (HT) insertions. However, the vulnerabilities of different parts of a circuit can differ by $10^3$ times \cite{conference:HS}, and removing security constraints away from the communications with larger vulnerabilities might cause significant security losses. In this work, the tasks and communications are treated with different vulnerabilities, and our proposed task scheduling method minimizes the design vulnerability under the performance constraints.
-    \item Our prior work only considers the area optimization in the task scheduling, and this work optimizes the chip area in both the vendor assignment and task scheduling stages, which enlarges the area optimization space. The major difficulty in optimizing the chip area in vendor assignment stage is that the vendors of tasks have not yet been determined, and therefore, the accurate number of cores from each vendor cannot be calculated. In the vendor assignment stage of this work, we assign the tasks that can share the same cores to the same vendor, and this minimizes the number of cores required by each vendor.
-
-\end{enumerate}
-
-These explanations that show the novelties over our prior work are presented in the Section 3.4 ``Motivations" of this revised manuscript:
-
-\vspace{0.5em}
-1) The necessity of considering the vulnerability is presented in the mid right of page 4, highlighted in red, and the explanations are also given as following.
-
-\textcolor{red}{Traditional methods for system performance optimization either ignore the consequent security loss \cite{article:CL} or treat every communication with the same security importance \cite{article:NW, conference:NW}. In fact, different communications have varying vulnerabilities to HT attacks, and these vulnerabilities can differ by up to $10^3$ times within the same benchmark \cite{conference:HS}. Therefore, optimizing the performance with the awareness of vulnerability variations helps to design the system with maximized security.}
-
-\vspace{0.5em}
-2) Our prior work did not optimize the chip area in the vendor assignment stage, and the reason that the chip area should also be optimized in the vendor assignment stage is presented in the mid left of page 5, highlighted in blue. This reason is also given as follows.
-
-\textcolor{blue}{Traditional methods start to optimize the number of cores after the vendor assignment stage when the number of cores required can be evaluated \cite{article:YS, article:XC, article:CL, article:NW}. However, the vendor assignment results also determine the number of cores required, and the example in Fig. \ref{fig:resource_req_motivation} explains the reason.}
-
-\noindent\rule[0.25\baselineskip]{252pt}{1pt}
-
-
-\subsection*{Comment 2}
-The threat model needs a better justification. For example, how the adversary can establish a communication channel to trigger the Trojans?
-
-\subsection*{Responses}
-We have followed your suggestions, and made the following modifications in Section 3.1 ``Threat Model" in page 3. These modifications are explained as follows.
-
-\vspace{0.5em}
-1) More explanations of HT attacks that we focus on in this work are added to the threat model (in the mid left of page 3, highlighted in blue), and the way that HTs establish secret communication paths to trigger the hibernated HTs is also explained. These explanations are also given as follows.
-
-\textcolor{blue}{As a result, the following two cases can occur at runtime: 1) \textit{Malfunction:} due to the insertion of the malicious logic into a 3PIP core, the outputs of the infected cores will be altered at some unexpected points; 2) \textit{Trojan collusion and Trojan triggering between Cores:} Trojans that are distributed on multiple cores to reduce the chance of being detected, and some malicious communication paths can also be established between cores by writing illegal values to certain secret memory space. Therefore, with these secret communication paths, a malicious logic in one core can trigger the Trojans in another core, and the active HTs in different cores can collude to cause catastrophic consequences to the systems.}
-
-
-\vspace{0.5em}
-2) Furthermore, what designers can do to defend the HTs is also presented in the lower left of page 3, highlighted in cyan. The explanation is also given as follows.
-
-\textcolor{cyan}{In this study, we target embedded platforms which execute application-specific tasks and have high security requirements, and such platforms are widely-used in auto-motive, safety-critical systems, etc \cite{article:YS}. The SoC used in these systems are vulnerable to various HT attacks when the untrusted 3PIPs get integrated into this SoC. Because the HTs in 3PIPs could be passed down the design cycle to post-silicon and all the fabricated chips contain such HTs \cite{article:NP}. In such security-critical systems, designers always have prior knowledge of the application and its runtime constraints, and they can perform security-aware design to meet performance requirements and reduce the chip area. In addition, designers also have the ability to purchase 3PIPs from different vendors and implement design techniques to improve security.}
-
-
-\noindent\rule[0.25\baselineskip]{252pt}{1pt}
-
-\subsection*{Comment 3}
-The paper uses a lot of hypothetical terms without proper justification. For instance, (a) How can the vul() parameter be defined or generalized for any given system? (b) How to obtain the "pte" values? (c) How do we determine the probability parameters prob(v, t)? The problem seems superficially crafted without real-world relation.
-
-\subsection*{Responses}
-Thanks for your comments. In the previous manuscript, the vulnerabilities are evaluated based on a number of assumptions, and these assumptions of setting vulnerabilities in Section 5 ``Experiments" may confuse the readers and make the readers hard to follow. In this revised manuscript, we follow your suggestions, and evaluate the vulnerabilities of communications using a vulnerability analysis method adopted from the work presented in \cite{conference:HS}. The vulnerability analysis method is presented in Section 3.3 (please refer to pages 3-4), and it consists of statement analysis, observability analysis and detectability analysis. In the experiments, the benchmarks do not provide the HDL source codes for statement analysis, and we assume that the statement weights of all signals are the same. This is also explained in Section 5.1 ``Experimental Setup" (in the upper right of page 9, highlighted in cyan), which is also given as follows.
-
-\textcolor{cyan}{The vulnerabilities of communications are analyzed by the method proposed in \cite{conference:HS} which consists of statement analysis, observability analysis and detectability analysis. Because the benchmarks do not provide the HDL source codes for statement analysis, we assume that the statement weights of all signals are one in these experiments.}
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -2043,94 +1957,60 @@ Thanks for your comments. In the previous manuscript, the vulnerabilities are ev
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 1}
-It appears that the key focus is on the vulnerability of communication, however, the authors do not clearly describe with a simple explanation of what sort of issues these could be. It would be good if they did provide that.
+One issue in the previous round of review is the difficulty in keeping in mind all the acronyms. Although the authors removed some unnecessary acronyms, the reviewer still thinks that it is essential to provide list of acronyms/abbreviations for ease of understanding.
 
 \subsection*{Responses}
 
-In this revised manuscript, the vulnerability analysis method adopted from the work presented \cite{conference:HS} is also explained in detail. We hope that the explanations of vulnerability analysis help readers get better understandings of the vulnerabilities against HT attacks. These explanations are presented in Section 3.3 ``Vulnerability Analysis", in the lower right of page 3 and upper left of page 4, highlighted in red. The details of vulnerability analysis method is also given as follows.
-
-\color{red}
-
-Analyzing a circuit's vulnerability against HT attacks is a key step towards trusted design, because sections of a circuit with low controllability and observability are considered potential areas for HT insertions \cite{article:JC,article:YD}. Adopted from the work presented in \cite{conference:HS}, the vulnerability analysis involves statement analysis, observability analysis and detectability analysis.
-
-The \textit{statement analysis} first measures the statement execution conditions of signals. Let $T_W(sig, l)$ be the \textit{statement weight} of signal $sig$ in line $l$, and it is defined as $\frac{U-L+1}{U_O-L_O+1}$, where $L$ and $U$ are the lower and upper limits of the value range, and $U_O$ and $L_O$ are the declared upper and lower limits of the controlling signals. Fig.\ref{fig:sample_code_analysis} shows the statement weights of signals $X$ and $Z$ with the sample codes given on the left column. For example, the range of $X$ in line 8 is from 0 to 10, and this means that $L = 0$, $U = 10$, $L_O = 0$ and $U_O = 15$. Thus, the statement weight of $X$ in line 8  is $T_W(X,8)$ = $\frac{10-0+1}{15-0+1} = 0.6875$.
-
-The \textit{observability analysis} evaluates the \textit{observability} of signals through the circuit's primary output, and it is computed by summing the statement weights of the signal that influence the target signal. The observability from signal $sig$ to its target signal $sig_t$ is denoted as $T_O(sig, sig_t)$, and the method of evaluating $T_O(sig, sig_t)$ is demonstrated via an example of calculating $T_O(X, Z)$. Signals $X$ and $Z$ both appear in lines 8 and 10, meaning that $T_O(X, Z)=0.1875 + 0.3125 = 0.5$, where 0.1875 and 0.3125 are the statement weights of $X$ in lines 8 and 10, respectively.
-
-The \textit{detectability analysis} defines the detectability of a signal based on its statement weight and observability. The detectability of signal $sig$ in line $l$ is defined as $T_D(sig,l) = T_W(sig,l) \times T_O(sig,sig_t)$, and an example of computing $T_D(X,8)$ is given as follows. With $T_W(X,8)=0.1875$ and $T_O(X,Z)=0.5$, the detectability is calculated as $T_D(X,8) = 0.1875 \times 0.5 = 0.09375$. Similarly, the detectability of $X$ in line 10 is $T_D(X,10) = 0.3125 \times 0.5 = 0.15625$. A lower $T_D$ indicates a higher vulnerability to Trojan insertion, and the signal $X$ at line 8 has a higher vulnerability to Trojan attacks in this example. Therefore, the vulnerability of a signal (also named as \textit{communication})  between tasks is set as $1/T_D$ in this study.
-
-
-\color{black}
+In this revised manuscript, the vulnerability analysis method adopted from the work presented \cite{conference:HS} is also explained in detail. We hope that the explanations of vulnerability analysis help readers get better understandings of the vulnerabilities against HT attacks. These explanations are presented in Section 3.3 "Vulnerability Analysis", in the lower right of page 3 and upper left of page 4, highlighted in red. The details of vulnerability analysis method is also given as follows.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 2}
-The reason to minimize cores isn't stated in the introduction. Is the reason so that an application is schedulable?
+In literature review, the authors may need to include a discussion and analysis on scheduling approaches specifically for MPSoCs incorporating untrusted 3PIP cores.
 
 \subsection*{Responses}
 
-Thanks for your comments. The necessity of minimizing the number of cores has been added in Section 1 ``Introduction", which is also presented as follows.
-
-\vspace{0.5em}
-1) The following description explains the reasons why both performance and chip area need to be optimized in task scheduling, especially with security constraints. This description is also presented in the mid right of page 1, highlighted in red.
-
-\textcolor{red}{This is achieved by duplicating tasks and mapping them on 3PIP cores from different vendors to detect HTs that alter task outputs or mute potential HT effects by preventing collusion between malicious 3PIP cores from the same vendor. But these security constraints in the design stage incur significant overheads (e.g., approximately 200\% area and 50\% performance overheads \cite{article:XC}). As each task needs to be conducted duplicately to ensure the correctness of the outputs, and this brings significant redundant computation cost; all data-dependent tasks must be computed by the cores from different vendors to establish trustworthy communications, and all these communications are inter-core communications with long delays. Therefore, researchers have developed a number of solutions and created trusted designs with minimum resource overheads, performance degradation and energy consumption \cite{article:SR, conference:AS, article:YS, article:XC}.}
-
-\vspace{0.5em}
-2) The following description states the fact that few study optimized the chip area along with performance, and it is necessary to jointly consider the security, performance and chip area in the MPSoC design. This description is also presented in the lower right of page 1, highlighted in cyan.
-
-\textcolor{cyan}{However, their studies ignore that parts of a design are much more vulnerable to HT attacks \cite{conference:HS}, and removing security constraints from the parts of a circuit that are more susceptible to Trojan insertion may yield significant security losses \cite{article:XC}. Furthermore, these studies only optimize the system performance in the context of security constraints, which might incur a significant area overhead. Chip area is also one of the critical issues towards trusted design, and therefore, performance and security along with chip area should be jointly considered for MPSoC design, especially for heterogeneous MPSoCs built from 3PIP cores which are untrustworthy.}
+Thanks for your comments. The necessity of minimizing the number of cores has been added in Section 1 "Introduction", which is also presented as follows.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 \subsection*{Comment 3}
-In the related work, under section 2.1, does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?  If so, then how does the proposed work differentiate itself from others in terms of that argument?
+Referring to Eq. (3), does the performance constraint in this work literally represent the
+deadline for task finish time? If so, why not directly using deadline constraints?
 
 \subsection*{Responses}
 
 \textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
 
-\vspace*{1em}
+\noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
-\textbf{A1.} Incorporating security constraints in the MPSoC design is to provide a HT-tolerant design, which can detect and mitigate the HT attacks at runtime, and such systems are tolerant to the HTs. In our work, the sections of a circuit with large vulnerability are considered potential areas for HT insertions  \cite{article:JC,article:YD}, and the primary goal of the proposed method is to minimize the design vulnerability to HT attacks, which is equivalent to minimize the possibility that the inserted HTs may successfully escape from the security constraints. These explanations are presented in the revised manuscript as follows:
+\subsection*{Comment 4}
+The term "core minimization" is to some extent awkward. Apparently, it means to achieve the lowest number of required cores. It is more appropriate to use "core usage minimization".
 
-\vspace{0.5em}
+\subsection*{Responses}
 
-1) In the lower left of page 1, highlighted in blue:
+\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
 
-\textcolor{blue}{Incorporating security constraints in the MPSoC design process is one of the most popular design-for-trust techniques, which can mitigate the effects of the HTs and enable trustworthy computations using untrusted 3PIP cores \cite{article:JR3, article:TR, conference:MB, conference:XC, conference:MS}.}
+\noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
-\vspace{0.5em}
+\subsection*{Comment 5}
+This paper heavily relies on pseudocodes to explain the key steps of the methodology, The
+authors can include flowcharts to help clarify the algorithmic flow.
 
-2) In the upper right of page 2, highlighted in blue:
+\subsection*{Responses}
 
-\textcolor{blue}{However, many applications, such as banking and military systems, have high security requirements \cite{conference:XZ}. Therefore, Trojan-tolerant design methodologies are another way to protect designs from HT attacks \cite{article:KX}.}
+\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
 
-\vspace{0.5em}
+\noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
-3) In the mid left of page 3, highlighted in red:
+\subsection*{Comment 6}
+The authors claim a low complexity of $O(m^2)$, in which m is the number of nodes. How comes
+that the scheduling approach takes exceptionally long execution times (regarding the CPU
+runtime statistics in Table 2)?
 
-\textcolor{red}{In this study, we adopt the same threat model in \cite{article:CL, article:YS}, which primarily focuses on detecting or mitigating malicious modifications.}
+\subsection*{Responses}
 
-\vspace{0.5em}
-
-4) In the mid right of page 3, highlighted in red:
-
-\textcolor{red}{Analyzing a circuit's vulnerability against HT attacks is a key step toward trusted design, because sections of a circuit with low controllability and observability are considered potential areas for HT insertions \cite{article:JC,article:YD}.}
-
-\vspace*{1em}
-
-\textbf{Q2.} How does the proposed work differentiate itself from others in terms of that argument?
-
-\vspace*{1em}
-
-\textbf{A2.} Our proposed work differentiates itself by the following aspects. 1) Considering the fact that some communications are more vulnerable to HT attacks, this work treats communications with different vulnerabilities, and optimizes the total vulnerability of the design. 2) The design vulnerability and  performance along with chip area are jointly considered in the MPSoC design.
-
-The explanations are presented in the revised manuscript, in the lower right of page 1, highlighted in blue. These explanations are also given as follows.
-
-\textcolor{cyan}{However, their studies ignore that parts of a design are much more vulnerable to HT attacks \cite{conference:HS}, and removing security constraints from the parts of a circuit that are more susceptible to Trojan insertion may yield significant security losses \cite{article:XC}. Furthermore, these studies only optimize the system performance in the context of security constraints, which might incur a significant area overhead. Chip area is also one of the critical issues towards trusted design, and therefore, performance and security along with chip area should be jointly considered for MPSoC design, especially for heterogeneous MPSoCs built from 3PIP cores which are untrustworthy.}
-
-\textcolor{cyan}{In this study, we focus on the design of MPSoCs through security-driven task scheduling under performance constraints, and the goal is to minimize the design vulnerability against HT attacks and the number of cores required.}
+\textbf{Q1.} Does the proposed work also suffer from the same issue that it is not possible to detect all possible modern Trojans that may lead to vulnerability?
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
