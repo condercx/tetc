@@ -1,0 +1,897 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.9.9)  10 SEP 2025 16:23
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**d:/Project/MPSoc/manuscript+replyletter/bare_jrnl_compsoc2.tex
+(d:/Project/MPSoc/manuscript+replyletter/bare_jrnl_compsoc2.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./IEEEtran.cls
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen141
+\@IEEEtrantmpdimenB=\dimen142
+\@IEEEtrantmpdimenC=\dimen143
+\@IEEEtrantmpcountA=\count196
+\@IEEEtrantmpcountB=\count197
+\@IEEEtrantmpcountC=\count198
+\@IEEEtrantmptoksA=\toks17
+-- Using IEEE Computer Society mode.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 458.
+(d:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen144
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen145
+\CLASSINFOnormalsizeunitybaselineskip=\dimen146
+\IEEEnormaljot=\dimen147
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <5.01874> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <5.01874> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <7.02625> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <7.02625> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <8.03> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <8.03> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.03374> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9.03374> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <9.53561> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <9.53561> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <11.04124> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <11.04124> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <12.045> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <12.045> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <17.06374> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <17.06374> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <20.075> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <20.075> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/n' in size <24.09> not available
+(Font)              Font shape `OT1/ppl/b/n' tried instead on input line 1039.
+LaTeX Font Info:    Font shape `OT1/ppl/bx/it' in size <24.09> not available
+(Font)              Font shape `OT1/ppl/b/it' tried instead on input line 1039.
+\IEEEquantizedlength=\dimen148
+\IEEEquantizedlengthdiff=\dimen149
+\IEEEquantizedtextheightdiff=\dimen150
+\IEEEilabelindentA=\dimen151
+\IEEEilabelindentB=\dimen152
+\IEEEilabelindent=\dimen153
+\IEEEelabelindent=\dimen154
+\IEEEdlabelindent=\dimen155
+\IEEElabelindent=\dimen156
+\IEEEiednormlabelsep=\dimen157
+\IEEEiedmathlabelsep=\dimen158
+\IEEEiedtopsep=\skip49
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@IEEEsubequation=\count269
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count270
+\c@table=\count271
+\@IEEEeqnnumcols=\count272
+\@IEEEeqncolcnt=\count273
+\@IEEEsubeqnnumrollback=\count274
+\@IEEEquantizeheightA=\dimen159
+\@IEEEquantizeheightB=\dimen160
+\@IEEEquantizeheightC=\dimen161
+\@IEEEquantizeprevdepth=\dimen162
+\@IEEEquantizemultiple=\count275
+\@IEEEquantizeboxA=\box52
+\@IEEEtmpitemindent=\dimen163
+\c@IEEEbiography=\count276
+\@IEEEtranrubishbin=\box53
+) (d:/texlive/2025/texmf-dist/tex/latex/savesym/savesym.sty
+Package: savesym 2013/09/02 v1.2 Saves and restores symbols (JG)
+) (d:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(d:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (d:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen164
+)) (d:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen165
+) (d:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count277
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count278
+\leftroot@=\count279
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count280
+\DOTSCASE@=\count281
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen166
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count282
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count283
+\dotsspace@=\muskip17
+\c@parentequation=\count284
+\dspbrk@lvl=\count285
+\tag@help=\toks19
+\row@=\count286
+\column@=\count287
+\maxfields@=\count288
+\andhelp@=\toks20
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (d:/texlive/2025/texmf-dist/tex/latex/txfonts/txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+\symAMSa=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \mathsterling on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 591.
+LaTeX Info: Redefining \not on input line 1043.
+) (d:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+) (d:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (d:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (d:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (d:/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (d:/texlive/2025/texmf-dist/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
+ (d:/texlive/2025/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count289
+\float@exts=\toks24
+\float@box=\box56
+\@float@everytoks=\toks25
+\@floatcapt=\box57
+) (d:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks26
+\c@algorithm=\count290
+) (d:/texlive/2025/texmf-dist/tex/latex/algorithmicx/algcompatible.sty
+Package: algcompatible 
+ (d:/texlive/2025/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count291
+\c@ALG@rem=\count292
+\c@ALG@nested=\count293
+\ALG@tlm=\skip55
+\ALG@thistlm=\skip56
+\c@ALG@Lnr=\count294
+\c@ALG@blocknr=\count295
+\c@ALG@storecount=\count296
+\c@ALG@tmpcounter=\count297
+\ALG@tmplength=\skip57
+)
+Document Style - algorithmic compatible environments for the `algorithmicx' style
+) (d:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+ (d:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (d:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (d:/texlive/2025/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip58
+\subfigcapskip=\skip59
+\subfigcaptopadj=\dimen175
+\subfigbottomskip=\skip60
+\subfigcapmargin=\dimen176
+\subfiglabelskip=\skip61
+\c@subfigure=\count298
+\c@lofdepth=\count299
+\c@subtable=\count300
+\c@lotdepth=\count301
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(d:/texlive/2025/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip62
+\subfig@bottom=\skip63
+) (d:/texlive/2025/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip64
+\multirow@cntb=\count302
+\multirow@dima=\skip65
+\bigstrutjot=\dimen177
+) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf.sty
+Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
+ (d:/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (d:/texlive/2025/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (d:/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (d:/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+ (d:/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (d:/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)) (d:/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (d:/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (d:/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (d:/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))) (d:/texlive/2025/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (d:/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (d:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen178
+\ar@mcellbox=\box58
+\extrarowheight=\dimen179
+\NC@list=\toks27
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box59
+)
+\rotheadsize=\dimen180
+\c@nlinenum=\count303
+\TeXr@lab=\toks28
+) (d:/texlive/2025/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+Package cleveref Info: `algorithmicx' support loaded on input line 3120.
+Package cleveref Info: always capitalise cross-reference names on input line 7830.
+Package cleveref Info: always capitalise cross-reference names on input line 7852.
+)
+\c@definition=\count304
+\c@lemma=\count305
+\c@property=\count306
+\c@proof=\count307
+\c@problem=\count308
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 403.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
+) (d:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count309
+\l__pdf_internal_box=\box60
+) (./bare_jrnl_compsoc2.aux)
+\openout1 = `bare_jrnl_compsoc2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 403.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 403.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 403.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 403.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 403.
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 403.
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 403.
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 403.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 403.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 403.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 403.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <5.01874> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <5.01874> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <7.02625> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <7.02625> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8.03> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8.03> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9.03374> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9.03374> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9.53561> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9.53561> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <11.04124> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <11.04124> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12.045> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12.045> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.06374> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.06374> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20.075> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20.075> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.09> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 403.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24.09> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 403.
+
+-- Lines per column: 61 (exact).
+(d:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count310
+\scratchdimen=\dimen181
+\scratchbox=\box61
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen182
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks30
+)
+LaTeX Font Info:    Trying to load font information for OT1+txss on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/ot1txss.fd
+File: ot1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 22.88542pt on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 9.05879pt on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 10.48914pt on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <11.04124> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 10.48914pt on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 7.62846pt on input line 520.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 7.62846pt on input line 520.
+LaTeX Font Info:    Calculating math sizes for size <11.04124> on input line 520.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 520.
+ (d:/texlive/2025/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 10.48914pt on input line 548.
+LaTeX Font Info:    Font shape `OT1/txss/b/sc' will be
+(Font)              scaled to size 10.48914pt on input line 548.
+
+
+
+
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 6.6749pt on input line 570.
+LaTeX Font Info:    Calculating math sizes for size <7.02625> on input line 570.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 4.6724pt on input line 570.
+[1{d:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{d:/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 9.05879pt on input line 674.
+
+
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 712.
+
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+
+
+[2]
+Underfull \hbox (badness 3291) in paragraph at lines 736--737
+\OT1/txr/m/n/9.53561 val-i-da-tion us-ing un-trusted 3PIPs. Two types of se-cu-rity
+ []
+
+
+
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <9.53561> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 738.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 9.05879pt on input line 738.
+<figure/sample_code_analysis.pdf, id=18, 344.38663pt x 281.16444pt>
+File: figure/sample_code_analysis.pdf Graphic file (type pdf)
+<use figure/sample_code_analysis.pdf>
+Package pdftex.def Info: figure/sample_code_analysis.pdf  used on input line 748.
+(pdftex.def)             Requested size: 210.55022pt x 171.90045pt.
+<figure/tg.png, id=19, 979.66pt x 798.985pt>
+File: figure/tg.png Graphic file (type png)
+<use figure/tg.png>
+Package pdftex.def Info: figure/tg.png  used on input line 759.
+(pdftex.def)             Requested size: 153.6447pt x 125.30437pt.
+<figure/constraint_example1_1.pdf, id=21, 336.25626pt x 296.10625pt>
+File: figure/constraint_example1_1.pdf Graphic file (type pdf)
+<use figure/constraint_example1_1.pdf>
+Package pdftex.def Info: figure/constraint_example1_1.pdf  used on input line 763.
+(pdftex.def)             Requested size: 142.26378pt x 125.27644pt.
+<figure/performance-motivation1.pdf, id=22, 398.4466pt x 342.25266pt>
+File: figure/performance-motivation1.pdf Graphic file (type pdf)
+<use figure/performance-motivation1.pdf>
+Package pdftex.def Info: figure/performance-motivation1.pdf  used on input line 767.
+(pdftex.def)             Requested size: 150.79968pt x 129.52989pt.
+
+Underfull \hbox (badness 1418) in paragraph at lines 776--777
+\OT1/txr/m/n/9.53561 ar-chi-tec-ture [14], dual/triple mod-u-lar re-dun-dancy [35], and
+ []
+
+
+
+[3 <./figure/sample_code_analysis.pdf>]
+Underfull \hbox (badness 1466) in paragraph at lines 814--815
+\OT1/txr/m/n/9.53561 of per-for-mance and area, and Fig. 2[] shows an ex-am-ple,
+ []
+
+
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 824--825
+\OT1/txr/m/n/9.53561 are inter-core com-mu-ni-ca-tions. How-ever, many security-
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 824--825
+\OT1/txr/m/n/9.53561 such as au-tonomous ve-hi-cles. To re-duce the per-for-mance
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 824--825
+\OT1/txr/m/n/9.53561 un-pro-tected com-mu-ni-ca-tions can be as-signed as intra-core
+ []
+
+<figure/security1_1.pdf, id=38, 484.81125pt x 310.15875pt>
+File: figure/security1_1.pdf Graphic file (type pdf)
+<use figure/security1_1.pdf>
+Package pdftex.def Info: figure/security1_1.pdf  used on input line 840.
+(pdftex.def)             Requested size: 210.55022pt x 134.70026pt.
+<figure/security2_1.pdf, id=39, 484.81125pt x 310.15875pt>
+File: figure/security2_1.pdf Graphic file (type pdf)
+<use figure/security2_1.pdf>
+Package pdftex.def Info: figure/security2_1.pdf  used on input line 845.
+(pdftex.def)             Requested size: 210.55022pt x 134.70026pt.
+
+
+[4 <./figure/tg.png> <./figure/constraint_example1_1.pdf> <./figure/performance-motivation1.pdf>]
+Underfull \hbox (badness 1515) in paragraph at lines 866--867
+\OT1/txr/m/n/9.53561 can-not guar-an-tee full pro-tec-tion from all HT at-tacks, the
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 869--870
+\OML/txmi/m/it/9.53561 pc$\OT1/txr/m/n/9.53561 , core speeds of ven-dors, and vul-ner-a-bil-ity of each
+ []
+
+
+
+
+
+[5 <./figure/security1_1.pdf> <./figure/security2_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figure/security2_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<figure/TG1.pdf, id=131, 182.03508pt x 426.52951pt>
+File: figure/TG1.pdf Graphic file (type pdf)
+<use figure/TG1.pdf>
+Package pdftex.def Info: figure/TG1.pdf  used on input line 977.
+(pdftex.def)             Requested size: 65.44142pt x 153.33572pt.
+<figure/tvg.pdf, id=132, 207.9268pt x 372.7315pt>
+File: figure/tvg.pdf Graphic file (type pdf)
+<use figure/tvg.pdf>
+Package pdftex.def Info: figure/tvg.pdf  used on input line 980.
+(pdftex.def)             Requested size: 86.2118pt x 154.54419pt.
+<figure/tvg1.pdf, id=133, 191.96518pt x 373.2374pt>
+File: figure/tvg1.pdf Graphic file (type pdf)
+<use figure/tvg1.pdf>
+Package pdftex.def Info: figure/tvg1.pdf  used on input line 983.
+(pdftex.def)             Requested size: 78.81425pt x 153.23903pt.
+
+Overfull \hbox (5.13109pt too wide) in paragraph at lines 973--985
+ [][] 
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 985.
+
+Package amsmath Warning: Cannot use `split' here;
+(amsmath)                trying to recover with `aligned' on input line 1001.
+
+
+Overfull \hbox (9.0648pt too wide) in alignment at lines 993--1003
+ [][][] []
+ []
+
+
+
+<figure/EVG1.pdf, id=134, 215.89359pt x 556.47296pt>
+File: figure/EVG1.pdf Graphic file (type pdf)
+<use figure/EVG1.pdf>
+Package pdftex.def Info: figure/EVG1.pdf  used on input line 1037.
+(pdftex.def)             Requested size: 79.6678pt x 205.34834pt.
+<figure/EVG2.pdf, id=135, 218.56857pt x 556.47296pt>
+File: figure/EVG2.pdf Graphic file (type pdf)
+<use figure/EVG2.pdf>
+Package pdftex.def Info: figure/EVG2.pdf  used on input line 1040.
+(pdftex.def)             Requested size: 80.52135pt x 205.0087pt.
+<figure/EVG3.pdf, id=136, 215.89359pt x 555.59167pt>
+File: figure/EVG3.pdf Graphic file (type pdf)
+<use figure/EVG3.pdf>
+Package pdftex.def Info: figure/EVG3.pdf  used on input line 1043.
+(pdftex.def)             Requested size: 79.6678pt x 205.02313pt.
+
+Overfull \hbox (6.89189pt too wide) in paragraph at lines 1033--1045
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 1054--1054
+[]\OT1/txr/bx/n/9.53561 Algorithm 1 \OT1/txr/m/n/9.53561 Task clus-ter-ing with per-for-mance con-straint,
+ []
+
+
+
+[6 <./figure/TG1.pdf> <./figure/tvg.pdf> <./figure/tvg1.pdf> <./figure/EVG1.pdf> <./figure/EVG2.pdf> <./figure/EVG3.pdf>]
+<figure/vcg_c_1.pdf, id=207, 512.7697pt x 298.75415pt>
+File: figure/vcg_c_1.pdf Graphic file (type pdf)
+<use figure/vcg_c_1.pdf>
+Package pdftex.def Info: figure/vcg_c_1.pdf  used on input line 1096.
+(pdftex.def)             Requested size: 213.39009pt x 122.34412pt.
+<figure/vcg_c_2.pdf, id=208, 557.98158pt x 357.30388pt>
+File: figure/vcg_c_2.pdf Graphic file (type pdf)
+<use figure/vcg_c_2.pdf>
+Package pdftex.def Info: figure/vcg_c_2.pdf  used on input line 1099.
+(pdftex.def)             Requested size: 227.62451pt x 128.03502pt.
+<figure/vcg_c_3.pdf, id=209, 512.7697pt x 298.75415pt>
+File: figure/vcg_c_3.pdf Graphic file (type pdf)
+<use figure/vcg_c_3.pdf>
+Package pdftex.def Info: figure/vcg_c_3.pdf  used on input line 1103.
+(pdftex.def)             Requested size: 221.92633pt x 122.34412pt.
+<figure/vcg_result.pdf, id=210, 525.17506pt x 332.52129pt>
+File: figure/vcg_result.pdf Graphic file (type pdf)
+<use figure/vcg_result.pdf>
+Package pdftex.def Info: figure/vcg_result.pdf  used on input line 1106.
+(pdftex.def)             Requested size: 221.9263pt x 128.03883pt.
+
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[7]
+Underfull \vbox (badness 6559) has occurred while \output is active []
+
+
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 1209--1210
+[]\OT1/txr/m/n/9.53561 Algorithm 2[] de-scribes the pro-posed ven-dor as-sign-ment
+ []
+
+
+
+[8 <./figure/vcg_c_1.pdf> <./figure/vcg_c_2.pdf> <./figure/vcg_c_3.pdf> <./figure/vcg_result.pdf>]
+Underfull \hbox (badness 3375) in paragraph at lines 1315--1316
+[]\OT1/txr/m/n/9.53561 In each it-er-a-tion of the performance-constrained task
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 1317--1318
+[]\OT1/txr/m/n/9.53561 In the ven-dor as-sign-ment and task schedul-ing stage,
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 1336--1337
+\OT1/txr/m/n/9.53561 All the ex-per-i-ments were im-ple-mented in C on a Linux
+ []
+
+
+
+
+
+[9]
+
+LaTeX Font Info:    Font shape `OT1/txss/b/it' in size <9.53561> not available
+(Font)              Font shape `OT1/txss/b/sl' tried instead on input line 1418.
+LaTeX Font Info:    Font shape `OT1/txss/b/sl' will be
+(Font)              scaled to size 9.05879pt on input line 1418.
+<figure/95SL.pdf, id=389, 1087.47221pt x 480.10933pt>
+File: figure/95SL.pdf Graphic file (type pdf)
+<use figure/95SL.pdf>
+Package pdftex.def Info: figure/95SL.pdf  used on input line 1428.
+(pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
+<figure/90SL.pdf, id=390, 1087.47221pt x 480.10933pt>
+File: figure/90SL.pdf Graphic file (type pdf)
+<use figure/90SL.pdf>
+Package pdftex.def Info: figure/90SL.pdf  used on input line 1431.
+(pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
+<figure/85SL.pdf, id=391, 1102.52846pt x 480.10933pt>
+File: figure/85SL.pdf Graphic file (type pdf)
+<use figure/85SL.pdf>
+Package pdftex.def Info: figure/85SL.pdf  used on input line 1434.
+(pdftex.def)             Requested size: 239.00298pt x 104.07129pt.
+<figure/failure_protection.pdf, id=392, 1052.43996pt x 513.49805pt>
+File: figure/failure_protection.pdf Graphic file (type pdf)
+<use figure/failure_protection.pdf>
+Package pdftex.def Info: figure/failure_protection.pdf  used on input line 1445.
+(pdftex.def)             Requested size: 250.38434pt x 122.16077pt.
+
+
+[10]
+
+
+
+[11 <./figure/95SL.pdf> <./figure/90SL.pdf> <./figure/85SL.pdf> <./figure/failure_protection.pdf>]
+Underfull \hbox (badness 2359) in paragraph at lines 1583--1584
+[]\OT1/txr/m/n/8.03 A. Malekpour, R. Ragel, A. Ign-ja-tovic, and S. Parameswaran,
+ []
+
+
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 1694--1695
+\OT1/txr/m/n/8.03 MP-SoCs from un-trust-wor-thy 3PIPs through security-driven task
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 1731--1732
+\OT1/txr/m/n/8.03 Tro-jan at-tacks us-ing hard-ware iso-la-tion,'' \OT1/txr/m/it/8.03 IEEE Trans-ac-tions on
+ []
+
+
+
+[12]
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 1876--1880
+[]\OT1/txss/b/n/8.03 Songping Liu \OT1/txss/m/n/8.03 re-ceived the B.E. de-gree in
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 1876--1880
+\OT1/txss/m/n/8.03 China. His cur-rent re-search in-ter-ests in-clude
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 1893--1895
+\OT1/txss/m/n/8.03 She is cur-rently a pro-fes-sor of elec-tron-ics
+ []
+
+
+
+[13]
+LaTeX Font Info:    Font shape `OT1/txss/b/sc' will be
+(Font)              scaled to size 13.34981pt on input line 1899.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1905
+[]
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 1933--1934
+[]\OT1/txr/m/n/9.53561 1) COTS, which stands for commercial-off-the-shelf, is
+ []
+
+
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1960--1962
+[]
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1976.
+(d:/texlive/2025/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
+
+[14
+
+]
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 2046--2047
+\OT1/txr/m/n/9.53561 It ap-pears that the key fo-cus is on the vul-ner-a-bil-ity of
+ []
+
+
+
+[15]
+
+
+
+[16]
+
+
+
+[17
+
+] (./bare_jrnl_compsoc2.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 8256 strings out of 473189
+ 143385 string characters out of 5719959
+ 592859 words of memory out of 5000000
+ 31338 multiletter control sequences out of 15000+600000
+ 676184 words of font info for 293 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 57i,18n,65p,1484b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxbsssc.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txex.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><d:/texlive/2025/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><d:/texlive/2025/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on bare_jrnl_compsoc2.pdf (17 pages, 909691 bytes).
+PDF statistics:
+ 658 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+
