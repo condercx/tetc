@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.11)  11 SEP 2025 18:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.11)  11 SEP 2025 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,6 +641,25 @@ Underfull \hbox (badness 1412) in paragraph at lines 867--868
 \OML/txmi/m/it/9.53561 pc$\OT1/txr/m/n/9.53561 , core speeds of ven-dors, and vul-ner-a-bil-ity of each
  []
 
+LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 963.
+
+Overfull \hbox (0.98828pt too wide) in paragraph at lines 982--982
+[]|$\OML/txmi/m/it/8.03 prob\OT1/txr/m/n/8.03 (\OML/txmi/m/it/8.03 v[]; T[]\OT1/txr/m/n/8.03 )$| 
+ []
+
+
+Overfull \hbox (5.66975pt too wide) in paragraph at lines 988--988
+[]|$\OML/txmi/m/it/8.03 Merge\OT1/txr/m/n/8.03 (\OML/txmi/m/it/8.03 c[]; c[]\OT1/txr/m/n/8.03 )$| 
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 998--999
+[]|\OT1/txr/m/n/8.03 Vendor com-pat-i-ble graph, rep-re-sent-ing whether two
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [5 <./figure/security1_1.pdf> <./figure/security2_1.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figure/security2_1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -648,193 +667,191 @@ pdfTeX warning: pdflatex.exe (file ./figure/security2_1.pdf): PDF inclusion: mul
 <figure/TG1.pdf, id=131, 182.03508pt x 426.52951pt>
 File: figure/TG1.pdf Graphic file (type pdf)
 <use figure/TG1.pdf>
-Package pdftex.def Info: figure/TG1.pdf  used on input line 981.
+Package pdftex.def Info: figure/TG1.pdf  used on input line 1032.
 (pdftex.def)             Requested size: 65.44142pt x 153.33572pt.
 <figure/tvg.pdf, id=132, 207.9268pt x 372.7315pt>
 File: figure/tvg.pdf Graphic file (type pdf)
 <use figure/tvg.pdf>
-Package pdftex.def Info: figure/tvg.pdf  used on input line 984.
+Package pdftex.def Info: figure/tvg.pdf  used on input line 1035.
 (pdftex.def)             Requested size: 86.2118pt x 154.54419pt.
 <figure/tvg1.pdf, id=133, 191.96518pt x 373.2374pt>
 File: figure/tvg1.pdf Graphic file (type pdf)
 <use figure/tvg1.pdf>
-Package pdftex.def Info: figure/tvg1.pdf  used on input line 987.
+Package pdftex.def Info: figure/tvg1.pdf  used on input line 1038.
 (pdftex.def)             Requested size: 78.81425pt x 153.23903pt.
 
-Overfull \hbox (5.13109pt too wide) in paragraph at lines 977--989
+Overfull \hbox (5.13109pt too wide) in paragraph at lines 1028--1040
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.03> on input line 989.
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 1007.
+(amsmath)                trying to recover with `aligned' on input line 1058.
 
 
-Overfull \hbox (9.0648pt too wide) in alignment at lines 999--1009
+Overfull \hbox (9.0648pt too wide) in alignment at lines 1050--1060
  [][][] []
  []
 
 <figure/EVG1.pdf, id=134, 215.89359pt x 556.47296pt>
 File: figure/EVG1.pdf Graphic file (type pdf)
 <use figure/EVG1.pdf>
-Package pdftex.def Info: figure/EVG1.pdf  used on input line 1046.
+Package pdftex.def Info: figure/EVG1.pdf  used on input line 1097.
 (pdftex.def)             Requested size: 79.6678pt x 205.34834pt.
 <figure/EVG2.pdf, id=135, 218.56857pt x 556.47296pt>
 File: figure/EVG2.pdf Graphic file (type pdf)
 <use figure/EVG2.pdf>
-Package pdftex.def Info: figure/EVG2.pdf  used on input line 1049.
+Package pdftex.def Info: figure/EVG2.pdf  used on input line 1100.
 (pdftex.def)             Requested size: 80.52135pt x 205.0087pt.
 <figure/EVG3.pdf, id=136, 215.89359pt x 555.59167pt>
 File: figure/EVG3.pdf Graphic file (type pdf)
 <use figure/EVG3.pdf>
-Package pdftex.def Info: figure/EVG3.pdf  used on input line 1052.
+Package pdftex.def Info: figure/EVG3.pdf  used on input line 1103.
 (pdftex.def)             Requested size: 79.6678pt x 205.02313pt.
 
-Overfull \hbox (6.89189pt too wide) in paragraph at lines 1042--1054
+Overfull \hbox (6.89189pt too wide) in paragraph at lines 1093--1105
  [][] 
  []
 
-
-Underfull \hbox (badness 1783) in paragraph at lines 1063--1063
+[6 <./figure/TG1.pdf> <./figure/tvg.pdf> <./figure/tvg1.pdf>]
+Underfull \hbox (badness 1783) in paragraph at lines 1114--1114
 []\OT1/txr/bx/n/9.53561 Algorithm 1 \OT1/txr/m/n/9.53561 Task clus-ter-ing with per-for-mance con-straint,
  []
 
-[6 <./figure/TG1.pdf> <./figure/tvg.pdf> <./figure/tvg1.pdf> <./figure/EVG1.pdf> <./figure/EVG2.pdf> <./figure/EVG3.pdf>]
-<figure/vcg_c_1.pdf, id=207, 512.7697pt x 298.75415pt>
+<figure/vcg_c_1.pdf, id=171, 512.7697pt x 298.75415pt>
 File: figure/vcg_c_1.pdf Graphic file (type pdf)
 <use figure/vcg_c_1.pdf>
-Package pdftex.def Info: figure/vcg_c_1.pdf  used on input line 1107.
+Package pdftex.def Info: figure/vcg_c_1.pdf  used on input line 1158.
 (pdftex.def)             Requested size: 213.39009pt x 122.34412pt.
-<figure/vcg_c_2.pdf, id=208, 557.98158pt x 357.30388pt>
+<figure/vcg_c_2.pdf, id=172, 557.98158pt x 357.30388pt>
 File: figure/vcg_c_2.pdf Graphic file (type pdf)
 <use figure/vcg_c_2.pdf>
-Package pdftex.def Info: figure/vcg_c_2.pdf  used on input line 1110.
+Package pdftex.def Info: figure/vcg_c_2.pdf  used on input line 1161.
 (pdftex.def)             Requested size: 227.62451pt x 128.03502pt.
-<figure/vcg_c_3.pdf, id=209, 512.7697pt x 298.75415pt>
+<figure/vcg_c_3.pdf, id=173, 512.7697pt x 298.75415pt>
 File: figure/vcg_c_3.pdf Graphic file (type pdf)
 <use figure/vcg_c_3.pdf>
-Package pdftex.def Info: figure/vcg_c_3.pdf  used on input line 1114.
+Package pdftex.def Info: figure/vcg_c_3.pdf  used on input line 1165.
 (pdftex.def)             Requested size: 221.92633pt x 122.34412pt.
-<figure/vcg_result.pdf, id=210, 525.17506pt x 332.52129pt>
+<figure/vcg_result.pdf, id=174, 525.17506pt x 332.52129pt>
 File: figure/vcg_result.pdf Graphic file (type pdf)
 <use figure/vcg_result.pdf>
-Package pdftex.def Info: figure/vcg_result.pdf  used on input line 1117.
+Package pdftex.def Info: figure/vcg_result.pdf  used on input line 1168.
 (pdftex.def)             Requested size: 221.9263pt x 128.03883pt.
- [7]
+[7 <./figure/EVG1.pdf> <./figure/EVG2.pdf> <./figure/EVG3.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1217--1218
+Underfull \hbox (badness 1490) in paragraph at lines 1268--1269
 []\OT1/txr/m/n/9.53561 Algorithm 2[] de-scribes the pro-posed ven-dor as-sign-ment
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+[8 <./figure/vcg_c_1.pdf> <./figure/vcg_c_2.pdf> <./figure/vcg_c_3.pdf> <./figure/vcg_result.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./figure/overall_flow.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figure/overall_flow.pdf, id=215, 868.20357pt x 685.60138pt>
+<figure/overall_flow.pdf, id=385, 868.20357pt x 685.60138pt>
 File: figure/overall_flow.pdf Graphic file (type pdf)
 <use figure/overall_flow.pdf>
-Package pdftex.def Info: figure/overall_flow.pdf  used on input line 1250.
+Package pdftex.def Info: figure/overall_flow.pdf  used on input line 1302.
 (pdftex.def)             Requested size: 252.94499pt x 199.73991pt.
 
-Underfull \hbox (badness 3375) in paragraph at lines 1328--1329
+Underfull \hbox (badness 3375) in paragraph at lines 1380--1381
 []\OT1/txr/m/n/9.53561 In each it-er-a-tion of the performance-constrained task
  []
 
-[8 <./figure/vcg_c_1.pdf> <./figure/vcg_c_2.pdf> <./figure/vcg_c_3.pdf> <./figure/vcg_result.pdf>]
-Underfull \hbox (badness 2828) in paragraph at lines 1330--1331
+
+Underfull \hbox (badness 2828) in paragraph at lines 1382--1383
 []\OT1/txr/m/n/9.53561 In the ven-dor as-sign-ment and task schedul-ing stage,
  []
 
-[9 <./figure/overall_flow.pdf>]
-Underfull \hbox (badness 1466) in paragraph at lines 1349--1350
+
+Underfull \hbox (badness 1466) in paragraph at lines 1401--1402
 \OT1/txr/m/n/9.53561 All the ex-per-i-ments were im-ple-mented in C on a Linux
  []
 
+[9 <./figure/overall_flow.pdf>] [10]
 LaTeX Font Info:    Font shape `OT1/txss/b/it' in size <9.53561> not available
-(Font)              Font shape `OT1/txss/b/sl' tried instead on input line 1431.
+(Font)              Font shape `OT1/txss/b/sl' tried instead on input line 1483.
 LaTeX Font Info:    Font shape `OT1/txss/b/sl' will be
-(Font)              scaled to size 9.05879pt on input line 1431.
-<figure/95SL.pdf, id=409, 1087.47221pt x 480.10933pt>
+(Font)              scaled to size 9.05879pt on input line 1483.
+<figure/95SL.pdf, id=412, 1087.47221pt x 480.10933pt>
 File: figure/95SL.pdf Graphic file (type pdf)
 <use figure/95SL.pdf>
-Package pdftex.def Info: figure/95SL.pdf  used on input line 1441.
+Package pdftex.def Info: figure/95SL.pdf  used on input line 1493.
 (pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
-<figure/90SL.pdf, id=410, 1087.47221pt x 480.10933pt>
+<figure/90SL.pdf, id=413, 1087.47221pt x 480.10933pt>
 File: figure/90SL.pdf Graphic file (type pdf)
 <use figure/90SL.pdf>
-Package pdftex.def Info: figure/90SL.pdf  used on input line 1444.
+Package pdftex.def Info: figure/90SL.pdf  used on input line 1496.
 (pdftex.def)             Requested size: 239.00298pt x 105.51448pt.
-<figure/85SL.pdf, id=411, 1102.52846pt x 480.10933pt>
+<figure/85SL.pdf, id=414, 1102.52846pt x 480.10933pt>
 File: figure/85SL.pdf Graphic file (type pdf)
 <use figure/85SL.pdf>
-Package pdftex.def Info: figure/85SL.pdf  used on input line 1447.
+Package pdftex.def Info: figure/85SL.pdf  used on input line 1499.
 (pdftex.def)             Requested size: 239.00298pt x 104.07129pt.
-[10]
-<figure/failure_protection.pdf, id=416, 1052.43996pt x 513.49805pt>
+<figure/failure_protection.pdf, id=415, 1052.43996pt x 513.49805pt>
 File: figure/failure_protection.pdf Graphic file (type pdf)
 <use figure/failure_protection.pdf>
-Package pdftex.def Info: figure/failure_protection.pdf  used on input line 1458.
+Package pdftex.def Info: figure/failure_protection.pdf  used on input line 1510.
 (pdftex.def)             Requested size: 250.38434pt x 122.16077pt.
 
-Underfull \vbox (badness 3977) has occurred while \output is active []
 
- [11 <./figure/95SL.pdf> <./figure/90SL.pdf> <./figure/85SL.pdf> <./figure/failure_protection.pdf>]
-Underfull \hbox (badness 2359) in paragraph at lines 1596--1597
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./figure/95SL.pdf> <./figure/90SL.pdf> <./figure/85SL.pdf> <./figure/failure_protection.pdf>]
+Underfull \hbox (badness 2359) in paragraph at lines 1648--1649
 []\OT1/txr/m/n/8.03 A. Malekpour, R. Ragel, A. Ign-ja-tovic, and S. Parameswaran,
  []
 
-
-Underfull \hbox (badness 2635) in paragraph at lines 1707--1708
+[12]
+Underfull \hbox (badness 2635) in paragraph at lines 1759--1760
 \OT1/txr/m/n/8.03 MP-SoCs from un-trust-wor-thy 3PIPs through security-driven task
  []
 
-[12]
-Underfull \hbox (badness 1990) in paragraph at lines 1744--1745
+
+Underfull \hbox (badness 1990) in paragraph at lines 1796--1797
 \OT1/txr/m/n/8.03 Tro-jan at-tacks us-ing hard-ware iso-la-tion,'' \OT1/txr/m/it/8.03 IEEE Trans-ac-tions on
  []
 
 
-Underfull \hbox (badness 5050) in paragraph at lines 1889--1893
+Underfull \hbox (badness 5050) in paragraph at lines 1941--1945
 []\OT1/txss/b/n/8.03 Songping Liu \OT1/txss/m/n/8.03 re-ceived the B.E. de-gree in
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 1889--1893
+Underfull \hbox (badness 3375) in paragraph at lines 1941--1945
 \OT1/txss/m/n/8.03 China. His cur-rent re-search in-ter-ests in-clude
  []
 
-
-Underfull \hbox (badness 6708) in paragraph at lines 1906--1908
+[13]
+Underfull \hbox (badness 6708) in paragraph at lines 1958--1960
 \OT1/txss/m/n/8.03 She is cur-rently a pro-fes-sor of elec-tron-ics
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 1918--1920
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1931--1933
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1948--1950
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2020
-[]
- []
-
 [14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1970--1972
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1985
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2000--2002
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2070--2072
+[]
+ []
+
+[15
 
 ] (./bare_jrnl_compsoc2.aux)
  ***********
@@ -843,18 +860,18 @@ L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8648 strings out of 476023
- 149142 string characters out of 5791733
- 1973190 words of memory out of 5000000
- 30592 multiletter control sequences out of 15000+600000
- 672614 words of font info for 288 fonts, out of 8000000 for 9000
+ 8652 strings out of 476023
+ 149190 string characters out of 5791733
+ 1979190 words of memory out of 5000000
+ 30594 multiletter control sequences out of 15000+600000
+ 673964 words of font info for 290 fonts, out of 8000000 for 9000
  39 hyphenation exceptions out of 8191
  57i,18n,65p,1496b,384s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxbsssc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txsy.pfb><d:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb><d:/texlive/2024/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on bare_jrnl_compsoc2.pdf (14 pages, 972961 bytes).
+Output written on bare_jrnl_compsoc2.pdf (15 pages, 975956 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
+ 672 PDF objects out of 1000 (max. 8388607)
+ 276 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

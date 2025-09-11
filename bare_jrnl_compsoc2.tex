@@ -951,7 +951,58 @@ where $dly(e_{ij})$ is the communication delay of $e_{ij}$.
 
 \section{Security-Driven Task Scheduling Methods}
 
-In this section, a three-step task scheduling method is proposed, and both the design vulnerability and the number of cores are optimized under performance constraints. The three steps of the proposed method are performance-constrained task clustering, vendor assignment with core minimization, and task scheduling.
+In this section, a three-step task scheduling method is proposed, and both the design vulnerability and the number of cores are optimized under performance constraints. The three steps of the proposed method are performance-constrained task clustering, vendor assignment with core minimization, and task scheduling. \textcolor{blue}{\cref{table:notation} gives the descriptions of the notations and acronyms used in this paper.}
+
+
+
+\begin{table}[!h]
+%\vspace{-3em}
+\renewcommand{\arraystretch}{1.1}
+\caption{\textcolor{blue}{Variables and acronyms used in this paper.}}
+\centering
+\begin{tabular}{p{1.3cm}|*{8}{p{6.6cm}}}
+\hline
+\hline
+
+\hspace{-0.4em}\textbf{Notation}         & \textbf{Description}    \\
+\hline
+
+\hspace{-0.4em}\textbf{Variables} & \\
+$vul(e)$   & Vulnerability of edge $e$.\\
+
+$dly(e)$      & Communication delay of edge $e$; $dly_{inter}(e)$ and $dly_{intra}(e)$ are the inter-core and intra-core communication delays of $e$, respectively.\\
+
+
+$dly_{rd}(e)$         & Reduced communication delay of $e$ after contracting $e$.\\
+
+$w_{dly}(e)$         & Total reduced delay after contracting edge $e$.\\
+
+$w(e)$               & Weight of $e$ that evaluates both delay reduction and vulnerability increment.\\
+
+$prob(v_i,T_j)$      & The probability that $v_i$ is executed in time $T_j$.\\
+
+$DG(c, T_j)$      & The probabilities of all tasks in cluster $c$ in time $T_j$.\\
+
+$DG_{max}(c)$     & The maximum of all $DG(c, T_j)$, and it estimates the required number of cores for all tasks in cluster $c$.\\
+
+$Merge(c_i, c_j)$ & Number of cores reduced by merging clusters $c_i$ and $c_j$.\\
+
+\hline
+
+\hspace{-0.4em}\textbf{Acronyms} & \\
+$TG/TG'$  & Task graph and its duplicate;\\
+$TVG$    & Timing violated graph, consisting of all paths that violate the timing constraints;\\
+$ECCG$   & Edge contraction conflict graph, representing every pair of edges in $TVG$ can be contracted simultaneously.\\
+$MWIS$   & Maximum weight independent set;\\
+$VCFG$   & Vendor conflict graph, representing whether two clusters must be assigned to different vendors; \\
+$VCPG$   & Vendor compatible graph, representing whether two clusters can be assigned to the same vendor; \\
+
+\hline
+\hline
+\end{tabular}
+\label{table:notation}
+\vspace{-0.5em}
+\end{table}
 
 
 
@@ -1231,16 +1282,17 @@ With all security constraints satisfied, the number of IP vendors is always equa
 % \label{alg:PCTS}
 % {\textbf{Input:}} task graph, $TG$\\
 % \hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
+% %\hspace*{2.4em}  core speeds of vendors.\\
 % {\textbf{Output:}} scheduling results, $TS$.
 % \begin{algorithmic}[1]
-% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Perform performance-constrained task clustering (calls Algorithm 1). */}
 % \STATE $TC=task\_cluster(TG,pc)$;
-% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Perform vendor assignment with core minimization (calls Algorithm 2). */}
+% %\STATE $TC'=task\_cluster(TG',pc)$, where $TG'$ is the duplicate of $TG$;
 % \STATE $VA=vendor\_assign(TC, vc, pc)$;
-% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Perform final scheduling for each vendor's tasks. */}
+% %\STATE $VA=vendor\_adjust(VA)$;
 % \FOR{each vendor $vendor_i$}
 %     \STATE $V_{vendor_i}$ is the set of all tasks assigned to $vendor_i$;
-%     \STATE $FDS(V_{vendor_i}, pc)$;
+% %    \STATE Calculate the mobilities of tasks in $V_{vendor_i}$;
+%     \STATE $FDS(V_{vendor_i}, pc)$;% using Force-directed scheduling;
 % \ENDFOR
 % \end{algorithmic}
 % \end{algorithm}
@@ -1248,7 +1300,7 @@ With all security constraints satisfied, the number of IP vendors is always equa
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{figure/overall_flow.pdf}
-\caption{overall flow}
+\caption{Security-driven task scheduling flowchart}
 \label{fig:overall_flow}
 \end{figure}
 
@@ -1986,7 +2038,7 @@ Referring to Eq. (3), does the performance constraint in this work literally rep
 
 
 \subsection*{Comment 4}
-The term ``core minimization'' is to some extent awkward. Apparently, it means to achieve the lowest number of required cores. It is more appropriate to use ``core usage minimization''. 
+The term ``core minimization'' is to some extent awkward. Apparently, it means to achieve the lowest number of required cores. It is more appropriate to use ``core usage minimization''.
 
 \subsection*{Responses}
 

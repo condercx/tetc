@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1757586787.07558 "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" "bare_jrnl_compsoc2.pdf" "bare_jrnl_compsoc2" 1757586788.44216 0
+["pdflatex"] 1757593625.98245 "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" "bare_jrnl_compsoc2.pdf" "bare_jrnl_compsoc2" 1757593627.44962 0
   "IEEEtran.cls" 1757497629 282417 5b8c27844c9c11d4ad81e78fc081963e ""
-  "bare_jrnl_compsoc2.aux" 1757586788 16951 7ff071000c539d32e5c1dad5c172691b "pdflatex"
-  "bare_jrnl_compsoc2.tex" 1757586785 146608 aa176f6f8d85beba5d1cc28bae485255 ""
+  "bare_jrnl_compsoc2.aux" 1757593627 17243 b8e181721627756f32eff12286fe6f89 "pdflatex"
+  "bare_jrnl_compsoc2.tex" 1757593623 148518 96f8cdf388c14c703e8dd54ae48ded03 ""
   "d:/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1728643890 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "d:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728643995 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/texlive/2024/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1728644428 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -127,7 +127,7 @@
   "d:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728645117 5421091 287ecf793ecd0deda92deb72de2a5ec0 ""
   "d:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728645272 6862186 59fa009170c0854fa092c3bb64327ca1 ""
   "d:/texlive/2024/texmf.cnf" 1728645102 713 614551405fc44b98efbf516466e3c909 ""
-  "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" 1757586785 146608 aa176f6f8d85beba5d1cc28bae485255 ""
+  "d:/资料/研究生/MPSoc/minor modification/tetc/bare_jrnl_compsoc2.tex" 1757593623 148518 96f8cdf388c14c703e8dd54ae48ded03 ""
   "figure/85SL.pdf" 1757497630 20581 73c8caf5170e702667e4f9d8d1823a1c ""
   "figure/90SL.pdf" 1757497630 20605 a1e7909f9c82dde6aa602f6a80d039ff ""
   "figure/95SL.pdf" 1757497630 20491 f8bf7ba578d7b55f2950937ed9abde3c ""
