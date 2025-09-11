@@ -1069,17 +1069,19 @@ application task graph, $TG$;\\
 {\textbf{Output:}} performance-constrained clustering result, $TC$.
 \end{flushleft}
 \begin{algorithmic}[1]
-\STATEx \hspace*{-\algorithmicindent}\textit{/* This is a comment. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Construct TVG and calculate edge weights. */}
 \WHILE{$TG.schedule\_length > pc$}
 \STATE Construct $TVG$ from $TG$.
 \FOR{each $e$ in $TVG$}
 \STATE Calculate $w(e)$;
 \ENDFOR
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Construct ECCG and find the MWIS. */}
 \STATE Construct $ECCG$ from $TVG$;
 \FOR{Each node $e$ in $ECCG$}
 \STATE $ECCG.node\_weight(e)=w(e)$;
 \ENDFOR
 \STATE Calculate $MWIS$ in $ECCG$;
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Contract edges based on the MWIS. */}
 \FOR{each node $e$ in $MWIS$}
     \STATE Contract the corresponding edge $e$ in $TG$;
 \ENDFOR
@@ -1177,28 +1179,25 @@ Fig. \ref{fig:vc_c} shows an example of cluster merging procedure, where the ini
 \label{alg:VA}
 {\textbf{Input:}}
 performance-constrained clustering results, $TC$.\\
-%\hspace*{2.4em}   and duplicated task graph, $TC$, $TC'$.\\
 \hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
-%\hspace*{2.4em}  core speeds of vendors.\\
 {\textbf{Output:}} vendor assignment, $VA$.
 \begin{algorithmic}[1]
-%\STATE calculate the mobility of of each task.
 \FOR{Each type of cores, whose vendor constraint is $vc^t$}
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Weight VCPG edges by the potential core reduction.*/}
 \STATE Calculate $DG_{max}(c)$ for each cluster $c$ with type $t$.
 \STATE Construct $VCFG^t$ and weighted $VCPG^t$;
-%\STATE Calculate the weights of edges in $VCPG$
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Cluster merging for core usage minimization. */}
 \WHILE{$VCPG^t.node\_num > vc^t$}
-\STATE Find the edge $e_{max}=(c_i,c_j)$ with the maximum weight in $VCPG^t$, and merge $c_i$ and $c_j$ into one cluster.%, denoted as $c_{i}$.
+\STATE Find the edge $e_{max}=(c_i,c_j)$ with the maximum weight in $VCPG^t$, and merge $c_i$ and $c_j$ into one cluster.
 \STATE Update $VCFG^t$ and weighted $VCPG^t$,
-%\STATE Update the weights of edges that connect $c_i$ in $VCPG$.;
 \ENDWHILE
-%\STATE Count the number of timing critical tasks in each cluster;
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Assign clusters to IP vendors. */}
 \WHILE {Not all clusters are assigned with IP vendors}
     \STATE Assign $c_i$ to vendor $vendor_j$, where $c_i$ is an unassigned cluster with the most timing critical tasks and $vendor_j$ is the available vendor with the fastest core speed.
 \ENDWHILE
 \ENDFOR
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 4: Adjust vendor assignment based on core speed. */}
 \STATE Update $DGs$ with the determined task execution times;
-%\STATE Sort security constraint-violated edges in descending order of security loss;
 \STATE $E_{cv}$ is the set consists of all intra-core communications;
 \WHILE {$E_{cv}\neq \emptyset$}
 \STATE Find $e\in E_{cv}$ with the largest $vul(e)$;
@@ -1232,17 +1231,16 @@ With all security constraints satisfied, the number of IP vendors is always equa
 \label{alg:PCTS}
 {\textbf{Input:}} task graph, $TG$\\
 \hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
-%\hspace*{2.4em}  core speeds of vendors.\\
 {\textbf{Output:}} scheduling results, $TS$.
 \begin{algorithmic}[1]
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Perform performance-constrained task clustering (calls Algorithm 1). */}
 \STATE $TC=task\_cluster(TG,pc)$;
-%\STATE $TC'=task\_cluster(TG',pc)$, where $TG'$ is the duplicate of $TG$;
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Perform vendor assignment with core minimization (calls Algorithm 2). */}
 \STATE $VA=vendor\_assign(TC, vc, pc)$;
-%\STATE $VA=vendor\_adjust(VA)$;
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Perform final scheduling for each vendor's tasks. */}
 \FOR{each vendor $vendor_i$}
     \STATE $V_{vendor_i}$ is the set of all tasks assigned to $vendor_i$;
-%    \STATE Calculate the mobilities of tasks in $V_{vendor_i}$;
-    \STATE $FDS(V_{vendor_i}, pc)$;% using Force-directed scheduling;
+    \STATE $FDS(V_{vendor_i}, pc)$;
 \ENDFOR
 \end{algorithmic}
 \end{algorithm}
