@@ -1191,12 +1191,12 @@ performance-constrained clustering results, $TC$.\\
 \STATE Find the edge $e_{max}=(c_i,c_j)$ with the maximum weight in $VCPG^t$, and merge $c_i$ and $c_j$ into one cluster.
 \STATE Update $VCFG^t$ and weighted $VCPG^t$,
 \ENDWHILE
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Assign clusters to IP vendors. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Assign clusters to vendors. */}
 \WHILE {Not all clusters are assigned with IP vendors}
     \STATE Assign $c_i$ to vendor $vendor_j$, where $c_i$ is an unassigned cluster with the most timing critical tasks and $vendor_j$ is the available vendor with the fastest core speed.
 \ENDWHILE
 \ENDFOR
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 4: Adjust vendor assignment based on core speed. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 4: Adjust vendor assignment considering core speed. */}
 \STATE Update $DGs$ with the determined task execution times;
 \STATE $E_{cv}$ is the set consists of all intra-core communications;
 \WHILE {$E_{cv}\neq \emptyset$}
@@ -1226,29 +1226,35 @@ With all security constraints satisfied, the number of IP vendors is always equa
 
 
 
-\begin{algorithm}[!h]
-\caption{Security-aware task scheduling with performance constraints, $task\_schedule(TG, pc, vc)$.}
-\label{alg:PCTS}
-{\textbf{Input:}} task graph, $TG$\\
-\hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
-{\textbf{Output:}} scheduling results, $TS$.
-\begin{algorithmic}[1]
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Perform performance-constrained task clustering (calls Algorithm 1). */}
-\STATE $TC=task\_cluster(TG,pc)$;
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Perform vendor assignment with core minimization (calls Algorithm 2). */}
-\STATE $VA=vendor\_assign(TC, vc, pc)$;
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Perform final scheduling for each vendor's tasks. */}
-\FOR{each vendor $vendor_i$}
-    \STATE $V_{vendor_i}$ is the set of all tasks assigned to $vendor_i$;
-    \STATE $FDS(V_{vendor_i}, pc)$;
-\ENDFOR
-\end{algorithmic}
-\end{algorithm}
+% \begin{algorithm}[!h]
+% \caption{Security-aware task scheduling with performance constraints, $task\_schedule(TG, pc, vc)$.}
+% \label{alg:PCTS}
+% {\textbf{Input:}} task graph, $TG$\\
+% \hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
+% {\textbf{Output:}} scheduling results, $TS$.
+% \begin{algorithmic}[1]
+% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Perform performance-constrained task clustering (calls Algorithm 1). */}
+% \STATE $TC=task\_cluster(TG,pc)$;
+% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Perform vendor assignment with core minimization (calls Algorithm 2). */}
+% \STATE $VA=vendor\_assign(TC, vc, pc)$;
+% \STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Perform final scheduling for each vendor's tasks. */}
+% \FOR{each vendor $vendor_i$}
+%     \STATE $V_{vendor_i}$ is the set of all tasks assigned to $vendor_i$;
+%     \STATE $FDS(V_{vendor_i}, pc)$;
+% \ENDFOR
+% \end{algorithmic}
+% \end{algorithm}
 
+\begin{figure}[!t]
+\centering
+\includegraphics[width=\linewidth]{figure/overall_flow.pdf}
+\caption{overall flow}
+\label{fig:overall_flow}
+\end{figure}
 
 %After vendor assignment, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP}.
 
-Algorithm \ref{alg:PCTS} gives the whole procedure of our proposed task scheduling algorithm. Tasks are clustered to meet the performance constraint and assigned to IP vendors with a minimized number of cores required (\textit{Lines 1-2}). Then, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP} (\textit{Lines 3-6}), because FDS schedules tasks evenly across each time period, requiring only a small number of cores. % In this study, two types of security constraints are considered, and when more types of security constraints are introduced, our proposed method can be easily adopted and applied.
+Algorithm  gives the whole procedure of our proposed task scheduling algorithm. Tasks are clustered to meet the performance constraint and assigned to IP vendors with a minimized number of cores required (\textit{Lines 1-2}). Then, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP} (\textit{Lines 3-6}), because FDS schedules tasks evenly across each time period, requiring only a small number of cores. % In this study, two types of security constraints are considered, and when more types of security constraints are introduced, our proposed method can be easily adopted and applied.
 
 Our proposed methods can also be easily adopted in the following scenario, where the number of vendors available might be less than the maximum clique size of the corresponding $VCFG$. In this situation, a vendor-constrained task clustering \cite{article:NW} is conducted before vendor assignment, so that the vendor constraint can be satisfied with a minimized number of contracted edges.% In the second scenario, application-specific IPs might not be able to support every task. For each type of IP, we first build its $VCFG$ and $VCPG$ according to the clustering results of tasks that belong to this type, and then perform the vendor assignment along with task scheduling individually.
 
