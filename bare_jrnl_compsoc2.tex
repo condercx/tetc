@@ -78,6 +78,7 @@
 % manually specify the path to it like:
 % \documentclass[10pt,journal,compsoc]{../sty/IEEEtran}
 \usepackage{xcolor}
+\usepackage{ulem}
 
 \newtheorem{definition}{\textbf{Definition}}
 \newtheorem{lemma}{\textbf{Lemma}}
@@ -565,7 +566,10 @@ Some researchers have also started to consider security constraints as loose con
 % indicating that the vulnerability of .
 
 
-In this study, we focus on the design of MPSoCs through security-driven task scheduling under performance constraints, and the goal is to minimize the design vulnerability against HT attacks and the number of cores required. A three-step design method that consists of task clustering, vendor assignment and task scheduling is proposed to enable MPSoC designers to achieve the desired performance, and obtain a high-security design with a small number of cores required. The contributions of the paper are summarized as follows:
+%In this study, we focus on the design of MPSoCs through security-driven task scheduling under performance constraints, and the goal is to minimize the design vulnerability against HT attacks and the number of cores required
+
+\textcolor{purple}{In this study, the performance constraint is defined as the deadline for completing all system tasks.}
+\textcolor{cyan}{We extend our prior work \cite{conference:NW} which considered only performance constraints in security-aware task scheduling, by co-optimizing design vulnerability against HTs and the number of required cores.} A three-step design method that consists of task clustering, vendor assignment and task scheduling is proposed to enable MPSoC designers to achieve the desired performance, and obtain a high-security design with a small number of cores required. The contributions of the paper are summarized as follows:
 
 %Firstly, a maximum weight independent set-based method iteratively selects inter-core communications and assigns the connected tasks to the same core to reduce the performance with minimized security risks. Secondly, the numbers of cores are estimated and optimized during vendor assignment by the cluster merging-based method. Finally, tasks from the same IP vendor are scheduled together using the force-directed scheduling method \cite{article:PP}. The experimental results demonstrate the high quality of the task scheduling results in reducing both system security risks and the number of cores under performance constraints. The contributions of the paper are summarized as follows:
 %\begin{enumerate}
@@ -685,11 +689,12 @@ Numerous and various functional and parametric tests are required to verify whet
 Although HT detection methods are implemented in different design stages, finding all HTs cannot be guaranteed even with the most cutting-edge technologies. However, many applications, such as banking and military systems, have high security requirements \cite{conference:XZ}. Therefore, Trojan-tolerant design methodologies are another way to protect designs from HT attacks \cite{article:KX}.
 
 
-\subsection{Design-for-Trust Techniques}
+\subsection{\textcolor{red}{\sout{Design-for-Trust Techniques}} \textcolor{blue}{Security-Driven Task schedules for MPSoC}}
 
 
 
-The design-for-trust techniques use strategies at design time to help detect HTs or mute the attack effects at runtime \cite{article:JR3}. Many studies have attempted to detect malicious outputs by duplicating tasks and to avoid HT collusion between IP cores from the same vendor. Incorporating the above design constraints (i.e., security constraints) in the MPSoC design process has attracted the attention of researchers. Reece \textit{et al.} \cite{article:TR} identified HTs through comparisons of two similar untrusted designs by testing functional differences for all possible input combinations. Beaumont \textit{et al.} \cite{conference:MB} developed an online HT detection architecture that implements fragmentation, replication and voting. Cui \textit{et al.} \cite{conference:XC} implemented both HT detection and error recovery at runtime for mission-critical applications, using recomputation with IP cores from different vendors. Shatta \textit{et al.} \cite{conference:MS} presented methodologies that detect the errors caused by HTs in 3PIPs using voters, and recover the system by replacing the errors.
+
+The \textcolor{red}{\sout{design-for-trust}} \textcolor{blue}{Trojan-tolerant design} techniques use strategies at design time to help detect HTs or mute the attack effects at runtime \cite{article:JR3}. Many studies have attempted to detect malicious outputs by duplicating tasks and to avoid HT collusion between IP cores from the same vendor. Incorporating the above design constraints (i.e., security constraints) in the MPSoC design process has attracted the attention of researchers. Reece \textit{et al.} \cite{article:TR} identified HTs through comparisons of two similar untrusted designs by testing functional differences for all possible input combinations. Beaumont \textit{et al.} \cite{conference:MB} developed an online HT detection architecture that implements fragmentation, replication and voting. Cui \textit{et al.} \cite{conference:XC} implemented both HT detection and error recovery at runtime for mission-critical applications, using recomputation with IP cores from different vendors. Shatta \textit{et al.} \cite{conference:MS} presented methodologies that detect the errors caused by HTs in 3PIPs using voters, and recover the system by replacing the errors.
 
 
 
@@ -861,7 +866,7 @@ In the vendor assignment stage, all tasks are partitioned into many groups such 
 
 \subsection{Problem Description}
 
-Although incorporating security constraints in the design process cannot guarantee full protection from all HT attacks, the vulnerability against HT attacks can be significantly reduced. Clustering data-dependent tasks to reduce the schedule length leaves the corresponding intra-core communications unprotected and makes these communications more vulnerable to HT attacks. In this study, the vulnerability of a communication is regarded as the reduced vulnerability after applying security constraints to this communication, and vulnerability analysis \cite{conference:HS} can be performed before our method is used to first determine the vulnerabilities of communications. Let the application task graph be $TG=(V,E)$, where $V$ and $E$ are the sets of tasks and communications, respectively; the problem of this work can be described as follows.
+Although incorporating security constraints in the design process cannot guarantee full protection from all HT attacks, the vulnerability against HT attacks can be significantly reduced. Clustering data-dependent tasks to reduce the schedule length leaves the corresponding intra-core communications unprotected and makes these communications more vulnerable to HT attacks. In this study, the vulnerability of a communication is regarded as the reduced vulnerability after applying security constraints to this communication, and vulnerability analysis \cite{conference:HS} can be performed before our method is used to first determine the vulnerabilities of communications. The vendor constraint is modeled as the number of available vendors, and \textcolor{purple}{the performance constraint is defined as the deadline to execute all system tasks}. Let the application task graph be $TG=(V,E)$, where $V$ and $E$ are the sets of tasks and communications, respectively; the problem of this work can be described as follows.
 
 \begin{problem}
 The inputs of this problem are the application task graph $TG$, vendor constraints $vc$, performance constraints $pc$, core speeds of vendors, and vulnerability of each communication. The objective is to find a schedule with the lowest design vulnerability against HT attacks, and the number of cores required is also optimized.
@@ -951,7 +956,7 @@ where $dly(e_{ij})$ is the communication delay of $e_{ij}$.
 
 \section{Security-Driven Task Scheduling Methods}
 
-In this section, a three-step task scheduling method is proposed, and both the design vulnerability and the number of cores are optimized under performance constraints. The three steps of the proposed method are performance-constrained task clustering, vendor assignment with core minimization, and task scheduling. \textcolor{blue}{\cref{table:notation} gives the descriptions of the notations and acronyms used in this paper.}
+In this section, a three-step task scheduling method is proposed, and both the design vulnerability and the number of cores are optimized under performance constraints. The three steps of the proposed method are performance-constrained task clustering, vendor assignment with \textcolor{purple}{core usage minimization}, and task scheduling. \textcolor{blue}{\cref{table:notation} gives the descriptions of the notations and acronyms used in this paper.}
 
 
 
@@ -1023,23 +1028,7 @@ slack(v) = T_{alap}(v)-T_{asap}(v)-exec(v)
 The \textbf{timing violated graph} ($TVG=(V_T, E_T)$) is then constructed by all tasks with negative slacks, and it is an induced subgraph of $TG$. $V_T$ consists of $s$, $t$ and all tasks with negative slacks, and $E_T=\{(v_i,v_j)\in E, v_i\in V_T \textrm{~and~} v_j\in V_T\}$. Fig. \ref{subfig:tvg1-1} shows an example of $TVG$, where the performance constraint is 5 $ut$ and the delay is 1 $ut$ for each edge.
 
 
-\begin{figure}[!t]
-\centering
-\begin{tabular}{ccc}
-\hspace*{-1em}
-\subfigure [] {
-\includegraphics[width=2.3cm]{figure/TG1.pdf}\label{subfig:TG1}
-}&\hspace*{-1.2em}
-\subfigure [] {
-\includegraphics[width=3.03cm]{figure/tvg.pdf}\label{subfig:tvg1-1}
-} &\hspace*{-1.2em}
-\subfigure [] {
-\includegraphics[width=2.77cm]{figure/tvg1.pdf}\label{subfig:tvg1-2}
-}
-\end{tabular}
-\caption{Example of evaluating the timing violated graph. \subref{subfig:TG1} Task graph with $s$ and $t$. \subref{subfig:tvg1-1} $TVG$ with a timing constraint of 5 $ut$. \subref{subfig:tvg1-2} The evaluation of $w_{dly}(e)$.}
-\label{fig:weight_e}
-\end{figure}
+
 
 %For application-specific IPs, data-dependent tasks might have to be executed by different IP cores, resulting in the corresponding edge being unable to be contracted. Therefore, we only focus on the edges that can be contracted to reduce the schedule length. In the following discussion, we assume that all edges can be contracted for simplicity.
 
@@ -1061,7 +1050,23 @@ Edge contraction is then performed to optimize the schedule length, but some dat
 
 \noindent where $path_{tvg}(e_{ij})$ is the number of paths in $TVG$ that pass through $e_{ij}$. If task $v_i$ and $v_j$ are of the same type, the weight of $e_{ij}$ is $path_{tvg}(e_{ij})*dly_{rd}(e_{ij})$; otherwise, $w_{dly}(e_{ij})$ is set to -1, meaning that such edge will not be selected for edge contraction.
 
-
+\begin{figure}[!t]
+\centering
+\begin{tabular}{ccc}
+\hspace*{-1em}
+\subfigure [] {
+\includegraphics[width=2.3cm]{figure/TG1.pdf}\label{subfig:TG1}
+}&\hspace*{-1.2em}
+\subfigure [] {
+\includegraphics[width=3.03cm]{figure/tvg.pdf}\label{subfig:tvg1-1}
+} &\hspace*{-1.2em}
+\subfigure [] {
+\includegraphics[width=2.77cm]{figure/tvg1.pdf}\label{subfig:tvg1-2}
+}
+\end{tabular}
+\caption{Example of evaluating the timing violated graph. \subref{subfig:TG1} Task graph with $s$ and $t$. \subref{subfig:tvg1-1} $TVG$ with a timing constraint of 5 $ut$. \subref{subfig:tvg1-2} The evaluation of $w_{dly}(e)$.}
+\label{fig:weight_e}
+\end{figure}
 
 
 Fig. \ref{subfig:tvg1-2} illustrates the $w_{dly}(e_{ij})$ and $vul(e_{ij})$ of all edges in $TVG$, which are indicated next to the edges, and all tasks are assumed to be the same type. The target in the schedule length optimization stage is to contract the edges with larger schedule length reduction $w_{dly}(e_{ij})$ and smaller vulnerability increment $vul(e_{ij})$. Therefore, the total weight that evaluates an edge $e_{ij}$ contraction, denoted as $w(e_{ij})$, can be calculated as follows:
@@ -1111,28 +1116,28 @@ The maximum weight independent set (MWIS) of $ECCG$ is calculated by the method 
 
 
 \begin{algorithm}[!t]
-\caption{Task clustering with performance constraint, $task\_cluster(TG, pc)$.}
+\caption{Performance constrained task clustering.}
 \label{alg:PCTC}
 \begin{flushleft}
 {\textbf{Input:}}
 application task graph, $TG$;\\
 \hspace*{2.8em}performance constraint, $pc$.\\
-{\textbf{Output:}} performance-constrained clustering result, $TC$.
+{\textbf{Output:}} performance-constrained clustering result.
 \end{flushleft}
 \begin{algorithmic}[1]
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Construct TVG and calculate edge weights. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 1: Construct TVG and calculate edge weights. */}}
 \WHILE{$TG.schedule\_length > pc$}
 \STATE Construct $TVG$ from $TG$.
 \FOR{each $e$ in $TVG$}
 \STATE Calculate $w(e)$;
 \ENDFOR
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Construct ECCG and find the MWIS. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 2: Construct ECCG and find the MWIS. */}}
 \STATE Construct $ECCG$ from $TVG$;
 \FOR{Each node $e$ in $ECCG$}
 \STATE $ECCG.node\_weight(e)=w(e)$;
 \ENDFOR
 \STATE Calculate $MWIS$ in $ECCG$;
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Contract edges based on the MWIS. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 3: Contract edges based on the MWIS. */}}
 \FOR{each node $e$ in $MWIS$}
     \STATE Contract the corresponding edge $e$ in $TG$;
 \ENDFOR
@@ -1174,7 +1179,7 @@ With the vulnerabilities of communications given in Fig. \ref{subfig:tvg1-2}, an
 
 
 
-\subsection{Vendor Assignment with Core Minimization}
+\subsection{Vendor Assignment with \textcolor{purple}{Core Usage Minimization}}
 
 %With performance-constrained task clustering results, tasks are then assigned to IP vendors.
 %This study focus on designs of MPSoCs which execute application-specific tasks, and only the tasks with the same type can be computed on the same type of cores.
@@ -1226,28 +1231,28 @@ Fig. \ref{fig:vc_c} shows an example of cluster merging procedure, where the ini
 %\end{figure}
 
 \begin{algorithm}[!h]
-\caption{Vendor-assignment, $vendor\_assign(TC, vc, pc)$.}
+\caption{Vendor assignment with \textcolor{purple}{core usage minimization}.}
 \label{alg:VA}
 {\textbf{Input:}}
-performance-constrained clustering results, $TC$.\\
+performance-constrained clustering results.\\
 \hspace*{2.4em} performance and vendor constraints, $pc$, $vc$.\\
-{\textbf{Output:}} vendor assignment, $VA$.
+{\textbf{Output:}} vendor assignment.
 \begin{algorithmic}[1]
 \FOR{Each type of cores, whose vendor constraint is $vc^t$}
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 1: Weight VCPG edges by the potential core reduction.*/}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 1: Weight VCPG edges by the potential core reduction.*/}}
 \STATE Calculate $DG_{max}(c)$ for each cluster $c$ with type $t$.
 \STATE Construct $VCFG^t$ and weighted $VCPG^t$;
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 2: Cluster merging for core usage minimization. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 2: Cluster merging for core usage minimization. */}}
 \WHILE{$VCPG^t.node\_num > vc^t$}
 \STATE Find the edge $e_{max}=(c_i,c_j)$ with the maximum weight in $VCPG^t$, and merge $c_i$ and $c_j$ into one cluster.
 \STATE Update $VCFG^t$ and weighted $VCPG^t$,
 \ENDWHILE
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 3: Assign clusters to vendors. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 3: Assign clusters to vendors. */}}
 \WHILE {Not all clusters are assigned with IP vendors}
     \STATE Assign $c_i$ to vendor $vendor_j$, where $c_i$ is an unassigned cluster with the most timing critical tasks and $vendor_j$ is the available vendor with the fastest core speed.
 \ENDWHILE
 \ENDFOR
-\STATEx \hspace*{-\algorithmicindent}\textit{/* Step 4: Adjust vendor assignment considering core speed. */}
+\STATEx \hspace*{-\algorithmicindent}\textit{\textcolor{blue}{/* Step 4: Adjust vendor assignment considering core speed. */}}
 \STATE Update $DGs$ with the determined task execution times;
 \STATE $E_{cv}$ is the set consists of all intra-core communications;
 \WHILE {$E_{cv}\neq \emptyset$}
@@ -1264,10 +1269,10 @@ performance-constrained clustering results, $TC$.\\
 Then, the number of timing-critical tasks in each cluster is counted, and the clusters containing more timing-critical tasks are assigned to the vendor with faster core speeds. Some timing-critical paths may be over-optimized because all tasks are treated with the lowest core speed in the performance-constrained task clustering stage, and we need to adjust the vendor assignment to meet more security constraints. The slacks of tasks are updated with the assigned core speeds, and every intra-core communication is checked in descending order of vulnerability $vul(e)$ to determine whether this communication can be reassigned with security constraints. An intra-core communication ($e$) can be reassigned to inter-core communication to satisfy security constraints only when all tasks in the paths that pass through $e$ have slack times no smaller than $dly_{rd}(e)$, and one of its connected tasks will be assigned to the IP vendor with the least core increment.% This procedure is named as vendor assignment adjustment in the following discussion.
 
 
+\color{blue}
+Algorithm \ref{alg:VA} describes the proposed vendor assignment algorithm which consists of vendor assignment and vendor adjustment stages. In the first step (\textit{Lines 2-3}), the potential core usage reduction obtained from clustering tasks is evaluated, and the corresponding weighted $VCPG$ is constructed. In the second step (\textit{Lines 4-7}), for each type $t$, tasks are merged into $vc$ clusters with consideration of core usage minimization. In the third step (\textit{Lines 8-10}), each cluster is assigned to IP vendors according to the core speed. In the fourth step (\textit{Lines 12-21}), unprotected edges are examined in descending order of vulnerability, and vendor assignments are adjusted under performance constraints to further reduce the overall design vulnerability, accounting for variations in core speed across vendors after initial assignment.
 
-Algorithm \ref{alg:VA} describes the proposed vendor assignment algorithm which consists of vendor assignment and vendor adjustment stages. In the vendor assignment stage (\textit{Lines 1-11}), tasks are assigned to IP vendors according to the types. For a certain type $t$, the edge with maximum weight in $VCPG^t$ is chosen, and the connected clusters are merged into one cluster. This procedure continues until the number of clusters equals the vendor constraints, and each cluster is assigned to IP vendors according to the core speed. In the vendor adjustment stage (\textit{Lines 12-21}), the unprotected edges are checked in descending order of vulnerabilities, and the vendor assignments are adjusted under performance constraints to further reduce the design vulnerability.
-
-
+\color{black}
 
 
 \subsection{Procedure of the Proposed Task Scheduling Method}
@@ -1300,13 +1305,19 @@ With all security constraints satisfied, the number of IP vendors is always equa
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\linewidth]{figure/overall_flow.pdf}
-\caption{Security-driven task scheduling flowchart}
+\caption{The overall flowchart of the proposed security-driven task scheduling.}
 \label{fig:overall_flow}
 \end{figure}
 
 %After vendor assignment, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP}.
 
-Algorithm  gives the whole procedure of our proposed task scheduling algorithm. Tasks are clustered to meet the performance constraint and assigned to IP vendors with a minimized number of cores required (\textit{Lines 1-2}). Then, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP} (\textit{Lines 3-6}), because FDS schedules tasks evenly across each time period, requiring only a small number of cores. % In this study, two types of security constraints are considered, and when more types of security constraints are introduced, our proposed method can be easily adopted and applied.
+\color{blue}
+
+\cref{fig:overall_flow} gives the whole procedure of our proposed security-driven task scheduling method. First, task clustering method (refer to Algorithm 1) iteratively contracts edges to meet performance constraints with a minimized vulnerability increment; Then, vendor assignment method (refer to Algorithm 2) assigns tasks to IP vendors with core usage minimization, and the vendor assignment is further adjusted considering core speed variation. Finally, tasks from the same IP vendor are scheduled together using the force-directed scheduling method \cite{article:PP}, because it schedules tasks evenly across each time period, requiring only a small number of cores.
+
+% first clustered to meet the performance constraint and assigned to IP vendors with a minimized number of cores required (\textit{Lines 1-2}). Then, tasks with the same IP vendor are scheduled together using the force-directed scheduling (FDS) method \cite{article:PP} (\textit{Lines 3-6}), because FDS schedules tasks evenly across each time period, requiring only a small number of cores. % In this study, two types of security constraints are considered, and when more types of security constraints are introduced, our proposed method can be easily adopted and applied.
+
+\color{black}
 
 Our proposed methods can also be easily adopted in the following scenario, where the number of vendors available might be less than the maximum clique size of the corresponding $VCFG$. In this situation, a vendor-constrained task clustering \cite{article:NW} is conducted before vendor assignment, so that the vendor constraint can be satisfied with a minimized number of contracted edges.% In the second scenario, application-specific IPs might not be able to support every task. For each type of IP, we first build its $VCFG$ and $VCPG$ according to the clustering results of tasks that belong to this type, and then perform the vendor assignment along with task scheduling individually.
 
@@ -1475,7 +1486,7 @@ Furthermore, our proposed method obtains the fewest cores among these methods. T
 
 
 
-The CPU runtimes of these methods are compared in Table \ref{table:runtime}. For the benchmarks modeled from real applications, all of the methods can produce solutions within several minutes. For the benchmarks that contain many nodes and edges, such as \textit{rnc5000} which has 5000 nodes and 55432 edges, our proposed method can output a solution within approximately 10 minutes. This finding indicates that our proposed method is applicable for most benchmarks in real practice.
+The CPU runtimes of these methods are compared in Table \ref{table:runtime}. For the benchmarks modeled from real applications, all of the methods can produce solutions within several minutes. \textcolor{purple}{The time complexity of our method is $O(m^2)$, meaning that the computational time is primarily decided by the scale of $m$ (the number of edges). In addition, the actual CPU runtime is also affected by the number of iterations executed in Algorithms 1 and 2 to satisfy the performance and vendor constraints.} For the benchmarks that contain many nodes and edges, such as \textit{rnc5000} which has 5000 nodes and 55432 edges, our proposed method can output a solution within approximately 10 minutes. This finding indicates that our proposed method is applicable for most benchmarks in real practice.
 
 
 
@@ -1964,7 +1975,7 @@ received the B.S. and Ph.D. degrees in electronics and communication engineering
 
 
 \section*{Authors' Response}
-$~~~~$We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper. The comments provided have contributed substantially to the improvement of our manuscript. In what follows, we present the detailed explanations of how the manuscript has been revised to respond to the comments of the associate editor and the reviewers. In the previous pages, the sentences colored blue, red, and cyan are the modified parts.
+$~~~~$We greatly appreciate the Editor's and the reviewers' insightful and scrupulous reviews of our paper. The comments provided have contributed substantially to the improvement of our manuscript. In what follows, we present the detailed explanations of how the manuscript has been revised to respond to the comments of the associate editor and the reviewers. In the previous pages, the sentences colored blue, red, purple and cyan are the modified parts.
 
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -1979,6 +1990,7 @@ The authors may consider adding a table summarizing all mathematical symbols to 
 
 \subsection*{Responses}
 
+Thank you for this suggestion. To improve readability, we have added a new table (Table I) at the beginning of Section IV. This table lists and describes the major variables and acronyms used throughout the paper.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -1995,7 +2007,7 @@ My only comment is that I would clearly state that this work extends some previo
 
 \subsection*{Responses}
 
-
+Thank you for the advice. We have now stated that this manuscript is an extension of our prior conference work \cite{conference:NW} in the introduction section. The added sentence is: ``\textcolor{cyan}{This study extends our prior work \cite{conference:NW} which considered only performance constraints in security-aware task scheduling, by co-optimizing design vulnerability against HTs and the number of required cores.}"
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -2011,7 +2023,7 @@ One issue in the previous round of review is the difficulty in keeping in mind a
 
 \subsection*{Responses}
 
-
+Table I.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -2020,7 +2032,7 @@ In literature review, the authors may need to include a discussion and analysis 
 
 \subsection*{Responses}
 
-
+See Sect. 2.2.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -2028,9 +2040,12 @@ In literature review, the authors may need to include a discussion and analysis 
 \subsection*{Comment 3}
 Referring to Eq. (3), does the performance constraint in this work literally represent the deadline for task finish time? If so, why not directly using deadline constraints?
 
+
 \subsection*{Responses}
 
+1. add more description, in page 1, purple color; page 5, lower left, purple color.
 
+2. tell that it is comment to use performance constraint in task scheduling, and list some reference as example.
 
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
@@ -2042,7 +2057,7 @@ The term ``core minimization'' is to some extent awkward. Apparently, it means t
 
 \subsection*{Responses}
 
-\textcolor{red}{adf}
+modified as suggested, list some examples (highlighted in purple)
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
@@ -2052,16 +2067,29 @@ This paper heavily relies on pseudocodes to explain the key steps of the methodo
 
 \subsection*{Responses}
 
-
+Algorithm 1, 2, and figure 7.
 
 \noindent\rule[0.25\baselineskip]{252pt}{1pt}
 
 
 
 \subsection*{Comment 6}
-The authors claim a low complexity of $O(m^2)$, in which m is the number of nodes. How comes that the scheduling approach takes exceptionally long execution times (regarding the CPU runtime statistics in Table 2)?
+The authors claim a low complexity of $O(m^2)$, in which $m$ is the number of nodes. How comes that the scheduling approach takes exceptionally long execution times (regarding the CPU runtime statistics in Table 2)?
 
 \subsection*{Responses}
+
+\textcolor{purple}{The time complexity of our method is $O(m^2)$, meaning that the computational time is primarily decided by the scale of $m$ (the number of edges). In addition, the actual CPU runtime is also affected by the number of iterations executed in Algorithms 1 and 2 to satisfy the performance and vendor constraints.}
+
+
+The exceptionally long execution times for the largest benchmarks (e.g., mc5000 with 5000 nodes and 55,432 edges) reported in Table 3 are primarily attributable to the following reasons:
+
+
+1. Benchmark Scale: The benchmark mc5000 is exceptionally large (5,000 tasks, 55,432 edges). While the $O(m^2)$  complexity correctly predicts that processing time will increase quadratically, the absolute time for a graph of this size is naturally substantial. The reported time of ``~10 minutes'' for a graph of this complexity is, in our view, still practically acceptable for a design-time scheduling algorithm applied to a complex MPSoC design, which is typically not a real-time process.
+
+2. Iterative Nature of the Algorithm: Our method is iterative. While we state that only a ``constant number of iterations'' are needed, this constant can be meaningful for large graphs. Each iteration involves the costly $O(m^2)$  step of building and solving the ECCG. For a large graph requiring, for example, 10 iterations to meet the performance constraint, the total time would effectively be $10*O(m^2)$ .
+
+
+
 
 
 
